@@ -1,0 +1,549 @@
+/* PC low resolution */
+@media (min-width: 1223px){
+    .hide-on-pc{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1223px){
+    .hide-on-pc{
+        display: none;
+    }
+
+    .header-bottom{
+        height: 45px;
+    }
+    .header-bottom__nav > li > a{
+        padding: 7px 10px 8px;
+    }
+
+    .header-bottom__nav .header-bottom__subnav{
+        top: calc(100% + 3px);
+    }
+    .detail-review-content{
+        padding: 12px 32px;
+    }
+}
+
+/* Moblie & Tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .nav__bars-btn{
+        display: block;
+    }
+    .nav__pc{
+        display: none;
+    }
+
+    .grid__column-2-3--separate{
+        border-right: none;
+        padding-bottom: 12px;
+    }
+
+    .game-split-row3{
+        flex: 1;
+    }
+
+    .footer__heading{
+        text-align: center;
+    }
+
+    .footer-item__link{
+        justify-content: center;
+    }
+
+    /* Trang chi tiết sản phẩm */
+    .auth-form_buynow{
+        width: 720px;
+    }
+
+    .detail-category-heading{
+        text-align: center;
+        margin-top: 4px;
+    }
+
+    .detail-category-list{
+        justify-content: center;
+    }
+
+    .border-right-solid{
+        border: none;
+    }
+
+    /* Thể loại */
+    .game-product-item-discount{
+        padding-bottom: 10px;
+    }
+
+    .game-split-row4-item__discount{
+        display: block;
+        font-size: 1.3rem;
+        padding: 2px;
+    }
+
+    .game-split-row4-item__price-old{
+        font-size: 1.3rem;
+    }
+
+    .game-split-row4-item__price-new{
+        font-size: 1.5rem;
+    }
+
+    /* Trang admin */   
+    .category-navbar-mt{
+        margin: 0;
+    }
+    
+    .switch-bkcolor-tablet-mobile{
+        background-color: #22abb5;
+    }
+    
+    .category-navbar-flex{
+        display: flex;
+    }
+    
+    .tabs-mobile-tablet{
+        display: flex;
+    }
+    
+    .category-navbar-heading{
+        margin: 24px 42px 24px 42px;
+        padding: 6px 0;
+    }
+    
+    .tab-item-mt{
+        margin: 0;
+    }
+
+    .mobile-category{
+        display: flex;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    /* .mt-24{
+        margin: 0;
+    } */
+
+    .header__search{
+        margin: 0 30px 0 20px;
+    }
+
+    .header__search-history{
+        top: calc(100% + 2px);
+    }
+
+    .header-bottom__subnav li a{
+        font-size: 1.5rem;
+    }
+
+    /* Trang chi tiết sản phẩm */
+    .position-fi{
+        margin-bottom: 24px;    
+    }
+
+    .detail-iconc{
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+
+    .detail-review-content{
+        padding: 12px 24px;
+    }
+
+    .review-all-icon{
+        padding-bottom: 15px;
+    }
+
+    .review-descrip{
+        font-size: 1.5rem;
+    }
+
+    .auth-form__datecard{
+        font-size: 1.3rem;
+    }
+
+    /* Note */
+
+    .blmwk-note{
+        padding-bottom: 85px;
+    }
+
+    .blmwk-note-2{
+        padding-bottom: 18px;
+    }
+
+    .madden-note-2{
+        padding-bottom: 52px;
+    }
+
+    .got-note{
+        padding-bottom: 170px;
+    }
+    
+    .got-note-2{
+        padding-bottom: 190px;
+    }
+
+    .pubg-note{
+        padding-bottom: 155px;
+    }
+    
+    .pubg-note-2{
+        padding-bottom: 70px;
+    }
+
+    .des-note{
+        padding-bottom: 120px;
+    }
+    
+    .des-note-2{
+        padding-bottom: 190px;
+    }
+    
+    .acm-note{
+        padding-bottom: 50px;
+    }
+    
+    .acm-note-2{
+        padding-bottom: 32px;
+    }
+
+    .rl-note{
+        padding-bottom: 86px;
+    }
+    
+    .rl-note-2{
+        padding-bottom: 18px;
+    }
+
+    /* Trang thể loại */
+    /* .game-split-row4-item__discount{
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 2px 0 0 24px;
+
+    }
+
+    .game-split-row4-item__price-old{
+        font-size: 1.4rem;
+    }
+
+    .game-split-row4-item__price-new{
+        font-size: 1.6rem;
+    } */
+
+    /* Modal thêm/sửa/xóa */
+    .auth-form_addfix{
+        width: 500px;
+    }
+}
+/* Mobile */
+@media (max-width: 739px){
+    .header{
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right:0;
+        left: 0;
+    }
+
+    .mt-24{
+        margin: 0;
+    }
+
+    .app__container{
+        margin-top: 32px;
+    }
+
+    .app__content,
+    .footer__content{
+        margin: 0 4px;
+    }
+
+    .hide-on-mobile{
+        display: none;
+    }
+
+    /* Đăng nhập / Đăng ký */
+    .auth-form{
+        width: 360px;
+    }
+
+    .auth-form__container{
+        padding: 0 4px;
+    }
+
+    .auth-form__form{
+        padding: 0 8px;
+    }
+
+    .auth-form__header{
+        padding: 0 12px;
+    }
+
+    .auth-form__heading{
+        font-size: 2.4rem;
+    }
+
+    .auth-form__input{
+        padding: 0 8px;
+        font-size: 1.5rem;
+    }
+
+    .auth-form__help{
+        margin-right: 12px;
+    }
+
+    .auth-form__help-link{
+        font-size: 1.5rem;
+    }
+
+    .auth-form__controls{
+        margin: 40px 12px 0 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .auth-form__controls-back{
+        margin-left: 0;
+    }
+
+    .auth-form__socials {
+        padding: 12px 4px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+    }
+
+    .btn.btn--size-s{
+        height: 32px;
+        font-size: 1.4rem;
+        padding: 0 4px;
+    }
+
+    .auth-form__socials-icon{
+        font-size: 1.8rem;
+        padding-left: 12px;
+    }
+
+    .auth-form__socials-title{
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .auth-form__socials--facebook{
+        margin-right: 4px;
+    }
+
+    .auth-form__socials--google{
+        margin-left: 4px;
+    }
+
+    .header-bottom{
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .header__search{
+        flex: unset;
+        position: fixed;
+        top: 41px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+        height: 46px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        padding: 0px;
+        animation: mobileSearchSideIn linear .3s;
+        margin: 0;
+        display: none;
+    }
+
+    .header__search-history{
+        position: fixed;
+        top: 88px;
+        left: 0;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .header__mobile-search,
+    .header__logo-mobile{
+        display: block;
+    }
+
+    /* Trang chi tiết sản phẩm */
+    .position-fi{
+        margin-bottom: 48px;    
+    }
+
+    .detail-heading{
+        margin: 20px 8px;
+    }
+
+    .detail-iconc{
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+
+    .detail-review-content{
+        padding: 12px 24px;
+        margin-top: 8px;
+    }
+
+    
+
+    /* Thanh toán */
+    .auth-form_buynow{
+        width: 360px;
+        padding: 4px;
+    }
+
+    .auth-form__top-buynow{
+        font-size: 2.4rem;
+        margin: 4px 0 0 0;
+    }
+
+    .auth-form_buynow--display{
+        flex-direction: column;
+    }
+
+    .auth-form__heading-buynow{
+        margin: 12px 0;
+    }
+
+    .auth-form__numbercard, .auth-form__datecard{
+        margin-top: 0;
+    }
+
+    .auth-form_buynow__container{
+        border: none;
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .auth-form__detail-game{
+        width: 100%;
+        padding: 0 16px;
+        margin: 0;
+    }
+
+    .auth-form__controls-margin{
+        margin: 20px 12px 20px 12px;
+    }
+
+    .auth-form__prices{
+        margin-top: 4px;
+    }
+
+    /* Thể loại */
+    .body-heading-all{
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    /* .split-price-all-on{
+        display: block;
+    } */
+
+    /* .game-product-item-discount{
+        text-align: center;
+    } */
+
+    /* Trang thể loại */
+    .game-product-item-discount{
+        padding-bottom: 8px;
+    }
+
+
+    .game-split-row4-item__discount{
+        display: block;
+        font-size: 1.3rem;
+        padding: 2px;
+    }
+
+    .game-split-row4-item__price-old{
+        font-size: 1.6rem;
+    }
+
+    .game-split-row4-item__price-new{
+        
+        font-size: 1.8rem;
+    } 
+
+    /* Trang admin */
+    .category-navbar-mt{
+        margin-top: 48px;
+    }
+
+    .category-navbar-heading{
+        margin: 0px 6px 4px 6px;
+        padding: 0 4px 12px 4px;
+    }
+
+    /* Modal thêm/sửa/xóa */
+    .auth-form_addfix{
+        width: 320px;
+        padding: 8px;
+    }
+
+    .auth-form_delete{
+        width: 320px;
+    }
+
+    .auth-form__top-fixnow{
+        margin: 0;
+    }
+
+    .auth-form__datecard{
+        margin-bottom: 4px;
+    }
+
+    .auth-form__fixnow{
+        margin-top: 4px;
+    }
+
+    .auth-form__input-buy-now{
+        margin-bottom: 4px;
+    }
+
+    .auth-form__controls-fix{
+        margin: 20px 12px 0 4px;
+    }
+
+    .detail-product-img{
+        display: none;
+    }
+
+    .detail-product-name{
+        width: 18%;
+    }
+
+    .detail-product-price{
+        width: 14%;
+    }
+
+    .mobile-category{
+        margin-top: 12px;
+    }
+}
+
+@keyframes mobileSearchSideIn{
+    from{
+        opacity: 0;
+        top: calc(41px / 2);
+    }
+    to{
+        opacity: 1;
+        top: 41px;
+    }
+}

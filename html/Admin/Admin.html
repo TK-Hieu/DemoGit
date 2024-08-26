@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/grid.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts. googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome-free-6.6.0-web/css/all.css">
+    <title>Admin</title>
+    <style>
+        body{
+            padding: 0;
+        }
+    </style> 
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="grid wide">
+                <div class="header-top">
+                    <!-- Logo -->
+                    <div class="header__logo ">
+                        <a href="#" class="header__logo-link">Meracisa</a>
+                    </div>
+
+                    <!-- Thông báo + Trợ giúp + Tài khoản -->
+                    <ul class="header-top__navbar-list">
+                        <!-- Thông báo -->
+                        <li class="header-top__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-bell"></i>
+                                Thông báo
+                            </a>
+                        </li>
+                        <!-- Đăng ký -->
+                        <li class="header-top__navbar-item top__navbar-item--deco">
+                            <div class="header__navbar-item-link header__navbar-item-name header__navbar-item--strong">
+                                Admin
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="app__container">
+            <div class="grid wide grid-position">
+                <div class="switch-bkcolor-tablet-mobile hide-on-pc" >
+                    <div class="category-navbar-mt category-navbar-flex">
+                        <a href="../../html/Admin/Admin.html" style="text-decoration: none;">
+                            <div class="category-navbar-item">
+                                <h3 class="category-navbar-heading">
+                                    <i class="fa-solid fa-house"></i>
+                                    Trang chủ
+                                </h3>
+                            </div>
+                        </a>
+                        <div class="tabs tabs-mobile-tablet">
+                            <div class="tab-item-mt tab-active-mt">
+                                <h3 class="category-navbar-heading">
+                                    <i class="fa-brands fa-product-hunt"></i>
+                                    Sản phẩm
+                                </h3>
+                            </div>
+                            <div class="tab-item-mt">
+                                <h3 class="category-navbar-heading">
+                                    <i class="fa-solid fa-users-line"></i>
+                                    Khách hàng
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row app__content">
+                    <div class="col l-2 m-0 c-0 grid__column-2-bkcolor">
+                        <div class="category-navbar">
+                            <div class="category-navbar-item">
+                                <h3 class="category-navbar-heading category-navbar-heading--seperate">
+                                    <i class="fa-solid fa-house"></i>
+                                    Trang chủ
+                                </h3>
+                            </div>
+                            <span class="category-navbar-span">Quản lý</span>
+                            <div class="tabs">
+                                <div class="tab-item tab-active">
+                                    <h3 class="category-navbar-heading">
+                                        <i class="fa-brands fa-product-hunt"></i>
+                                        Sản phẩm
+                                    </h3>
+                                </div>
+                                <div class="tab-item">
+                                    <h3 class="category-navbar-heading">
+                                        <i class="fa-solid fa-users-line"></i>
+                                        Khách hàng
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col l-10 m-0 c-0">
+                        <div class="tab-content">
+                            <div class="tab-pane tab-active">
+                                <h3 class="detail-heading detail-per">DANH SÁCH SẢN PHẨM</h3>
+                                <div class="auth-form__controls">
+                                    <button class="btn btn-add-product btn-hove js-user-addon">THÊM SẢN PHẨM</button>
+                                </div>
+                                <div class="detail-product-all">
+                                    <div class="detail-product-item detail-product-item-heading">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">Ảnh</div>
+                                            <div class="detail-product-code">Mã sản phẩm</div>
+                                            <div class="detail-product-name">Tên sản phẩm</div>
+                                            <div class="detail-product-price">Giá</div>
+                                            <div class="detail-product-discount">Giảm giá</div>
+                                            <div class="detail-product-genres">Loại hàng</div>
+                                            <div class="detail-product-descrip">Mô tả</div>
+                                            <div class="detail-product-capacity">Dung lượng</div>
+                                            <div class="detail-product-fix">Sửa</div>
+                                            <div class="detail-product-delete">Xóa</div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/need-for-speed-heat-1lhdh.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">1</div>
+                                            <div class="detail-product-name">Need For Speed Deluxe Edition</div>
+                                            <div class="detail-product-price">500.000đ</div>
+                                            <div class="detail-product-discount">25%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Hối hả vào ban ngày và mạo hiểm vào ban đêm trong Need for Speed ​​Heat, một trải nghiệm đua xe ly kỳ giúp bạn chống lại lực lượng cảnh sát lừa đảo của thành phố khi bạn chiến đấu để trở thành những tay đua đường phố ưu tú.</div>
+                                            <div class="detail-product-capacity">50GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/ApexLegend/apex.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">2</div>
+                                            <div class="detail-product-name">Apex Legends</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Chinh phục cùng nhân vật trong Apex Legends, một game bắn súng anh hùng miễn phí*, nơi các nhân vật huyền thoại với khả năng mạnh mẽ hợp tác để chiến đấu giành danh tiếng và vận may ở vùng biên giới.</div>
+                                            <div class="detail-product-capacity">75GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/Assassin CM/assansinmc.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">3</div>
+                                            <div class="detail-product-name">Assassin's Creed Mirage</div>
+                                            <div class="detail-product-price">1.285.000đ</div>
+                                            <div class="detail-product-discount">50%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Trải nghiệm câu chuyện về Basim, một tên trộm đường phố xảo quyệt với những viễn cảnh kinh hoàng, tìm kiếm câu trả lời và công lý khi anh ta đi qua những con phố đông đúc của Baghdad vào thế kỷ thứ chín.</div>
+                                            <div class="detail-product-capacity">40GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/BlackMyth/blackmythwukong-review.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">4</div>
+                                            <div class="detail-product-name">Black Myth: Wukong</div>
+                                            <div class="detail-product-price">1.500.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Black Myth: Wukong là một game nhập vai hành động lấy cảm hứng từ thần thoại Trung Hoa. Bạn sẽ vào vai Người được định mệnh để dấn thân vào những thử thách 
+                                                và điều kỳ diệu phía trước, để khám phá ra sự thật ẩn giấu.</div>
+                                            <div class="detail-product-capacity">130GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/Catsonduty/catsonduty.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">5</div>
+                                            <div class="detail-product-name">Cats on Duty</div>
+                                            <div class="detail-product-price">198.000đ</div>
+                                            <div class="detail-product-discount">0</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Cats on Duty là sự kết hợp hoàn hảo giữa thể loại game RTS, phòng thủ tháp và ghép 3. Quản lý hai sân chơi cùng lúc cũng như trang bị và nâng cấp tháp mèo của bạn để đánh bại lũ kẻ thù đáng gờm. Thưởng thức trận chiến meo meo!</div>
+                                            <div class="detail-product-capacity">1GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/destiny2/destiny2.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">6</div>
+                                            <div class="detail-product-name">Destiny 2</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Destiny 2 là game MMO hành động với một thế giới duy nhất phát triển mà bạn và bạn bè có thể tham gia mọi lúc, mọi nơi, hoàn toàn miễn phí.</div>
+                                            <div class="detail-product-capacity">105GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/dbd/dbd.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">7</div>
+                                            <div class="detail-product-name">Dead by Daylight</div>
+                                            <div class="detail-product-price">1.500.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Dead by Daylight là một trò chơi kinh dị nhiều người chơi (4 đấu 1), trong đó một người chơi sẽ vào vai Kẻ giết người man rợ, và bốn người chơi còn lại sẽ vào vai Người sống sót, cố gắng trốn thoát khỏi Kẻ giết người và tránh bị bắt và giết.</div>
+                                            <div class="detail-product-capacity">50GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/Deathbound/deathbound.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">8</div>
+                                            <div class="detail-product-name">Deathbound</div>
+                                            <div class="detail-product-price">538.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Deathbound là một game nhập vai hành động lấy bối cảnh thế giới nơi Đức tin và Khoa học xung đột. Hấp thụ tinh hoa của những chiến binh đã ngã xuống để khai thác sức mạnh và khả năng của họ. Sống sót trong một thực tế tàn khốc nơi Sự sống và Cái chết chưa bao giờ xung đột hơn thế.</div>
+                                            <div class="detail-product-capacity">16GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/DoH/DoH.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">9</div>
+                                            <div class="detail-product-name">Dungeons of Hinterberg</div>
+                                            <div class="detail-product-price">626.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Được trang bị một thanh kiếm và một hướng dẫn viên du lịch, hãy khám phá ngôi làng xinh đẹp trên núi cao Hinterberg và khám phá phép thuật ẩn giấu trong ngục tối của ngôi làng này! </div>
+                                            <div class="detail-product-capacity">8GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/DyingLight/dyinglight.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">10</div>
+                                            <div class="detail-product-name">Dying Light: Standard Edition</div>
+                                            <div class="detail-product-price">510.000đ</div>
+                                            <div class="detail-product-discount">80%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Sống sót trong một thành phố bị virus zombie tấn công! Khám phá những lựa chọn khó khăn mà bạn sẽ phải thực hiện trong nhiệm vụ bí mật của mình. Liệu lòng trung thành với cấp trên của bạn có mạnh hơn ý chí cứu những người sống sót không?</div>
+                                            <div class="detail-product-capacity">40GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/FrostPunk/e960-frostpunk_2.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">11</div>
+                                            <div class="detail-product-name">Frostpunk 2</div>
+                                            <div class="detail-product-price">790.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Khám phá một trò chơi sinh tồn trong thành phố lấy bối cảnh 30 năm sau trận bão tuyết tận thế tàn phá Trái đất, biến thế giới của chúng ta thành một vùng đất hoang tàn khắc nghiệt, băng giá.</div>
+                                            <div class="detail-product-capacity">None</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/gi/genshinimpactpc.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">12</div>
+                                            <div class="detail-product-name">Genshin Impact</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Bắt đầu cuộc hành trình qua Teyvat để tìm người anh em thất lạc của bạn và tìm kiếm câu trả lời từ The Seven — các vị thần của từng nguyên tố. Khám phá thế giới kỳ diệu này, hợp tác với nhiều nhân vật khác nhau và giải mã vô số bí ẩn mà Teyvat nắm giữ...</div>
+                                            <div class="detail-product-capacity">100 GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/Gots/got-larget.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">13</div>
+                                            <div class="detail-product-name">Ghost of Tsushima DIRECTOR'S CUT</div>
+                                            <div class="detail-product-price">1.625.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Một cơn bão đang đến. Hãy khám phá Ghost of Tsushima DIRECTOR’S CUT hoàn chỉnh trên PC; tự mình tạo ra con đường trong cuộc phiêu lưu hành động thế giới mở này và khám phá những điều kỳ diệu ẩn giấu của nó.</div>
+                                            <div class="detail-product-capacity">75 GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/lol/lol.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">14</div>
+                                            <div class="detail-product-name">League of Legends</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Trở thành huyền thoại. Tìm nhà vô địch của bạn, làm chủ khả năng của họ và đánh bại đối thủ trong trận chiến 5 đấu 5 hoành tráng để phá hủy căn cứ của kẻ thù.</div>
+                                            <div class="detail-product-capacity">16GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/Madden25/madden25.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">15</div>
+                                            <div class="detail-product-name">EA SPORTS Madden NFL 25</div>
+                                            <div class="detail-product-price">1.850.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Đánh bóng như bạn muốn với FieldSENSE được hỗ trợ bởi BOOM Tech. Trải nghiệm cách hệ thống xử lý động lực học mới dựa trên vật lý mở khóa các va chạm thực tế và hoạt ảnh chơi trò chơi mới ở cả hai bên bóng.</div>
+                                            <div class="detail-product-capacity">65GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/pubg/pubg.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">16</div>
+                                            <div class="detail-product-name">PUBG BATTLEGROUNDS</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Chơi PUBG: BATTLEGROUNDS miễn phí! Đổ bộ vào các địa điểm chiến lược, cướp vũ khí và vật tư, và sống sót để trở thành đội cuối cùng còn trụ lại trên nhiều Battlegrounds đa dạng.</div>
+                                            <div class="detail-product-capacity">50 GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/RAWMEN/rawmen-1d3pw.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">17</div>
+                                            <div class="detail-product-name">RAWMEN: Food Fighter Arena</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">RAWMEN là một game chiến đấu nhiều người chơi điên rồ, mang đến một phiên bản hấp dẫn của game bắn súng đấu trường. Nhổ súp, ném thức ăn và chiến đấu như một đầu bếp cơ bắp trong một trò chơi mà vũ khí là một hỗn hợp kỳ quặc được tạo ra trong bếp.</div>
+                                            <div class="detail-product-capacity">10 GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/RocketLe/ROCKETWIDE.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">18</div>
+                                            <div class="detail-product-name">Rocket League</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Rocket League là sự kết hợp mạnh mẽ giữa bóng đá theo phong cách arcade và đua xe hỗn loạn với cơ chế điều khiển dễ hiểu và lối chơi mượt mà dựa trên vật lý.</div>
+                                            <div class="detail-product-capacity">20GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/Valo/valorant.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">19</div>
+                                            <div class="detail-product-name">Valorant</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">VALORANT là game bắn súng chiến thuật 5v5 dựa trên nhân vật trên đấu trường toàn cầu. Đánh bại, vượt mặt và tỏa sáng hơn đối thủ của bạn bằng khả năng chiến thuật, đấu súng chính xác và làm việc nhóm thích ứng.</div>
+                                            <div class="detail-product-capacity">100 GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/zzz/zzz.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">20</div>
+                                            <div class="detail-product-name">Zenless Zone Zero</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Chào mừng đến với New Eridu — Nơi nhân loại trỗi dậy một lần nữa! Zenless Zone Zero là một trò chơi lấy bối cảnh trong tương lai gần, khi thế giới bị tàn phá bởi một thảm họa bí ẩn có tên là "Hollows".</div>
+                                            <div class="detail-product-capacity">60 GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                                <ul class="list-page">
+                                    <!-- <li class="page-active">1</li>
+                                    <li>2</li>
+                                    <li>3</li> -->
+                                </ul>
+                            </div>
+                            <div class="tab-pane">
+                                <h3 class="detail-heading detail-per">DANH SÁCH KHÁCH HÀNG</h3>
+                                <div class="auth-form__controls">
+                                    <button class="btn btn-add-product btn-hove js-user-cus-addon">THÊM KHÁCH HÀNG</button>
+                                </div>
+                                <div class="detail-product-all">
+                                    <div class="detail-product-item detail-product-item-heading">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">Ảnh</div>
+                                            <div class="detail-product-code">Mã khách hàng</div>
+                                            <div class="detail-product-cus-name">Họ và tên</div>
+                                            <div class="detail-product-birth">Ngày sinh</div>
+                                            <div class="detail-product-address">Địa chỉ</div>
+                                            <div class="detail-product-email">Email</div>
+                                            <div class="detail-product-phone">Số điện thoại</div>
+                                            <div class="detail-product-capacity">Mật khẩu</div>
+                                            <div class="detail-product-fix">Sửa</div>
+                                            <div class="detail-product-delete">Xóa</div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/z-user/3.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">1</div>
+                                            <div class="detail-product-cus-name">Nguyễn Trung Dũng</div>
+                                            <div class="detail-product-birth">10/01/1990</div>
+                                            <div class="detail-product-address">WJ68+5PG, Tân Thuận, Châu Thành A, Hậu Giang, Việt Nam</div>
+                                            <div class="detail-product-email">ntd123@gmail.com</div>
+                                            <div class="detail-product-phone">0124827465</div>
+                                            <div class="detail-product-capacity">ntd123</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/z-user/2.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">2</div>
+                                            <div class="detail-product-cus-name">Lê Tấn Dũng</div>
+                                            <div class="detail-product-birth">11/03/2000</div>
+                                            <div class="detail-product-address">3X3V+W6, Tam Bình, Vĩnh Long, Việt Nam</div>
+                                            <div class="detail-product-email">ltd1103@gmail.com</div>
+                                            <div class="detail-product-phone">0383295021</div>
+                                            <div class="detail-product-capacity">ltd1103</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/z-user/4.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">3</div>
+                                            <div class="detail-product-cus-name">Lê Thị Hằng</div>
+                                            <div class="detail-product-birth">11/09/1995</div>
+                                            <div class="detail-product-address">239 Đ. Trần Quang Khải, Phường Tân Định, Quận 1, Hồ Chí Minh 700000, Việt Nam</div>
+                                            <div class="detail-product-email">lth1995@gmail.com</div>
+                                            <div class="detail-product-phone">0149586902</div>
+                                            <div class="detail-product-capacity">123456</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/z-user/5.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">4</div>
+                                            <div class="detail-product-cus-name">Đỗ Văn Hiếu</div>
+                                            <div class="detail-product-birth">25/09/2002</div>
+                                            <div class="detail-product-address">142/18 Đ. Cộng Hòa, Phường 4, Tân Bình, Hồ Chí Minh, Việt Nam</div>
+                                            <div class="detail-product-email">dvhieu@gmail.com</div>
+                                            <div class="detail-product-phone">0119283950</div>
+                                            <div class="detail-product-capacity">111111</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/z-user/6.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">5</div>
+                                            <div class="detail-product-cus-name">Đỗ Sĩ Hùng</div>
+                                            <div class="detail-product-birth">30/12/2001</div>
+                                            <div class="detail-product-address">Lô 10 KCN Tân Đức, Đức Hòa Hạ, Đức Hòa, Long An, Việt Nam</div>
+                                            <div class="detail-product-email">dsh3012@gmail.com</div>
+                                            <div class="detail-product-phone">0345234519</div>
+                                            <div class="detail-product-capacity">dsh23123</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/z-user/anh-den-ngau.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">6</div>
+                                            <div class="detail-product-cus-name">Ngô Văn Kiệt</div>
+                                            <div class="detail-product-birth">11/11/2004</div>
+                                            <div class="detail-product-address">37 Đường Mê Linh, Phường 9, Thành phố Đà Lạt, Lâm Đồng, Việt Nam</div>
+                                            <div class="detail-product-email">nvk0987@gmail.com</div>
+                                            <div class="detail-product-phone">0122998800</div>
+                                            <div class="detail-product-capacity">nvk1234</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/z-user/7.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">7</div>
+                                            <div class="detail-product-cus-name">Nguyễn Bá Long</div>
+                                            <div class="detail-product-birth">09/09/1999</div>
+                                            <div class="detail-product-address">R69C+R4V, Đạ Đôn, Lâm Hà, Lâm Đồng, Việt Nam</div>
+                                            <div class="detail-product-email">balong@gmail.com</div>
+                                            <div class="detail-product-phone">0123344123</div>
+                                            <div class="detail-product-capacity">balong</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/z-user/8.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">8</div>
+                                            <div class="detail-product-cus-name">Đỗ Thị Thanh Thảo</div>
+                                            <div class="detail-product-birth">02/02/2002</div>
+                                            <div class="detail-product-address">XV9G+F9C, Đường số 2 Gamuda Garden, Gamuda Gardens, Hoàng Mai, Hà Nội, Việt Nam</div>
+                                            <div class="detail-product-email">dttt567@gmail.com</div>
+                                            <div class="detail-product-phone">0122342342</div>
+                                            <div class="detail-product-capacity">ahihihi</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/z-user/9.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">9</div>
+                                            <div class="detail-product-cus-name">Lê Văn Tuấn</div>
+                                            <div class="detail-product-birth">01/01/2000</div>
+                                            <div class="detail-product-address">Nghiêm Xuân Yêm, Đại Kim, Hoàng Mai, Hà Nội 100000, Việt Nam</div>
+                                            <div class="detail-product-email">lvt@gmail.com</div>
+                                            <div class="detail-product-phone">0124424322</div>
+                                            <div class="detail-product-capacity">lvt1234</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-page-cus">
+                                    <!-- <li class="page-active">1</li>
+                                    <li>2</li>
+                                    <li>3</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-10 m-12 c-12 hide-on-pc">
+                        <div class="tab-content">
+                            <div class="tab-pane-mt tab-active-mt">
+                                <h3 class="detail-heading detail-per">DANH SÁCH SẢN PHẨM</h3>
+                                <div class="auth-form__controls">
+                                    <button class="btn btn-add-product btn-hove js-user-addon">THÊM SẢN PHẨM</button>
+                                </div>
+                                <div class="detail-product-all">
+                                    <div class="detail-product-item detail-product-item-heading">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">Ảnh</div>
+                                            <div class="detail-product-code">Mã sản phẩm</div>
+                                            <div class="detail-product-name">Tên sản phẩm</div>
+                                            <div class="detail-product-price">Giá</div>
+                                            <div class="detail-product-discount">Giảm giá</div>
+                                            <div class="detail-product-genres">Loại hàng</div>
+                                            <div class="detail-product-descrip">Mô tả</div>
+                                            <div class="detail-product-capacity">Dung lượng</div>
+                                            <div class="detail-product-fix">Sửa</div>
+                                            <div class="detail-product-delete">Xóa</div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/need-for-speed-heat-1lhdh.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">1</div>
+                                            <div class="detail-product-name">Need For Speed Deluxe Edition</div>
+                                            <div class="detail-product-price">500.000đ</div>
+                                            <div class="detail-product-discount">25%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Hối hả vào ban ngày và mạo hiểm vào ban đêm trong Need for Speed ​​Heat, một trải nghiệm đua xe ly kỳ giúp bạn chống lại lực lượng cảnh sát lừa đảo của thành phố khi bạn chiến đấu để trở thành những tay đua đường phố ưu tú.</div>
+                                            <div class="detail-product-capacity">50GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/ApexLegend/apex.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">2</div>
+                                            <div class="detail-product-name">Apex Legends</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Chinh phục cùng nhân vật trong Apex Legends, một game bắn súng anh hùng miễn phí*, nơi các nhân vật huyền thoại với khả năng mạnh mẽ hợp tác để chiến đấu giành danh tiếng và vận may ở vùng biên giới.</div>
+                                            <div class="detail-product-capacity">75GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/Assassin CM/assansinmc.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">3</div>
+                                            <div class="detail-product-name">Assassin's Creed Mirage</div>
+                                            <div class="detail-product-price">1.285.000đ</div>
+                                            <div class="detail-product-discount">50%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Trải nghiệm câu chuyện về Basim, một tên trộm đường phố xảo quyệt với những viễn cảnh kinh hoàng, tìm kiếm câu trả lời và công lý khi anh ta đi qua những con phố đông đúc của Baghdad vào thế kỷ thứ chín.</div>
+                                            <div class="detail-product-capacity">40GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/BlackMyth/blackmythwukong-review.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">4</div>
+                                            <div class="detail-product-name">Black Myth: Wukong</div>
+                                            <div class="detail-product-price">1.500.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Black Myth: Wukong là một game nhập vai hành động lấy cảm hứng từ thần thoại Trung Hoa. Bạn sẽ vào vai Người được định mệnh để dấn thân vào những thử thách 
+                                                và điều kỳ diệu phía trước, để khám phá ra sự thật ẩn giấu.</div>
+                                            <div class="detail-product-capacity">130GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/Catsonduty/catsonduty.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">5</div>
+                                            <div class="detail-product-name">Cats on Duty</div>
+                                            <div class="detail-product-price">198.000đ</div>
+                                            <div class="detail-product-discount">0</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Cats on Duty là sự kết hợp hoàn hảo giữa thể loại game RTS, phòng thủ tháp và ghép 3. Quản lý hai sân chơi cùng lúc cũng như trang bị và nâng cấp tháp mèo của bạn để đánh bại lũ kẻ thù đáng gờm. Thưởng thức trận chiến meo meo!</div>
+                                            <div class="detail-product-capacity">1GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/destiny2/destiny2.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">6</div>
+                                            <div class="detail-product-name">Destiny 2</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Destiny 2 là game MMO hành động với một thế giới duy nhất phát triển mà bạn và bạn bè có thể tham gia mọi lúc, mọi nơi, hoàn toàn miễn phí.</div>
+                                            <div class="detail-product-capacity">105GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/dbd/dbd.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">7</div>
+                                            <div class="detail-product-name">Dead by Daylight</div>
+                                            <div class="detail-product-price">1.500.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Dead by Daylight là một trò chơi kinh dị nhiều người chơi (4 đấu 1), trong đó một người chơi sẽ vào vai Kẻ giết người man rợ, và bốn người chơi còn lại sẽ vào vai Người sống sót, cố gắng trốn thoát khỏi Kẻ giết người và tránh bị bắt và giết.</div>
+                                            <div class="detail-product-capacity">50GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/Deathbound/deathbound.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">8</div>
+                                            <div class="detail-product-name">Deathbound</div>
+                                            <div class="detail-product-price">538.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Deathbound là một game nhập vai hành động lấy bối cảnh thế giới nơi Đức tin và Khoa học xung đột. Hấp thụ tinh hoa của những chiến binh đã ngã xuống để khai thác sức mạnh và khả năng của họ. Sống sót trong một thực tế tàn khốc nơi Sự sống và Cái chết chưa bao giờ xung đột hơn thế.</div>
+                                            <div class="detail-product-capacity">16GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/DoH/DoH.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">9</div>
+                                            <div class="detail-product-name">Dungeons of Hinterberg</div>
+                                            <div class="detail-product-price">626.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Được trang bị một thanh kiếm và một hướng dẫn viên du lịch, hãy khám phá ngôi làng xinh đẹp trên núi cao Hinterberg và khám phá phép thuật ẩn giấu trong ngục tối của ngôi làng này! </div>
+                                            <div class="detail-product-capacity">8GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/DyingLight/dyinglight.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">10</div>
+                                            <div class="detail-product-name">Dying Light: Standard Edition</div>
+                                            <div class="detail-product-price">510.000đ</div>
+                                            <div class="detail-product-discount">80%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Sống sót trong một thành phố bị virus zombie tấn công! Khám phá những lựa chọn khó khăn mà bạn sẽ phải thực hiện trong nhiệm vụ bí mật của mình. Liệu lòng trung thành với cấp trên của bạn có mạnh hơn ý chí cứu những người sống sót không?</div>
+                                            <div class="detail-product-capacity">40GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/FrostPunk/e960-frostpunk_2.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">11</div>
+                                            <div class="detail-product-name">Frostpunk 2</div>
+                                            <div class="detail-product-price">790.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Khám phá một trò chơi sinh tồn trong thành phố lấy bối cảnh 30 năm sau trận bão tuyết tận thế tàn phá Trái đất, biến thế giới của chúng ta thành một vùng đất hoang tàn khắc nghiệt, băng giá.</div>
+                                            <div class="detail-product-capacity">None</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/gi/genshinimpactpc.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">12</div>
+                                            <div class="detail-product-name">Genshin Impact</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Bắt đầu cuộc hành trình qua Teyvat để tìm người anh em thất lạc của bạn và tìm kiếm câu trả lời từ The Seven — các vị thần của từng nguyên tố. Khám phá thế giới kỳ diệu này, hợp tác với nhiều nhân vật khác nhau và giải mã vô số bí ẩn mà Teyvat nắm giữ...</div>
+                                            <div class="detail-product-capacity">100 GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/Gots/got-larget.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">13</div>
+                                            <div class="detail-product-name">Ghost of Tsushima DIRECTOR'S CUT</div>
+                                            <div class="detail-product-price">1.625.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Một cơn bão đang đến. Hãy khám phá Ghost of Tsushima DIRECTOR’S CUT hoàn chỉnh trên PC; tự mình tạo ra con đường trong cuộc phiêu lưu hành động thế giới mở này và khám phá những điều kỳ diệu ẩn giấu của nó.</div>
+                                            <div class="detail-product-capacity">75 GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/lol/lol.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">14</div>
+                                            <div class="detail-product-name">League of Legends</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Trở thành huyền thoại. Tìm nhà vô địch của bạn, làm chủ khả năng của họ và đánh bại đối thủ trong trận chiến 5 đấu 5 hoành tráng để phá hủy căn cứ của kẻ thù.</div>
+                                            <div class="detail-product-capacity">16GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/Madden25/madden25.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">15</div>
+                                            <div class="detail-product-name">EA SPORTS Madden NFL 25</div>
+                                            <div class="detail-product-price">1.850.000đ</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Đánh bóng như bạn muốn với FieldSENSE được hỗ trợ bởi BOOM Tech. Trải nghiệm cách hệ thống xử lý động lực học mới dựa trên vật lý mở khóa các va chạm thực tế và hoạt ảnh chơi trò chơi mới ở cả hai bên bóng.</div>
+                                            <div class="detail-product-capacity">65GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/pubg/pubg.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">16</div>
+                                            <div class="detail-product-name">PUBG BATTLEGROUNDS</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Chơi PUBG: BATTLEGROUNDS miễn phí! Đổ bộ vào các địa điểm chiến lược, cướp vũ khí và vật tư, và sống sót để trở thành đội cuối cùng còn trụ lại trên nhiều Battlegrounds đa dạng.</div>
+                                            <div class="detail-product-capacity">50 GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/RAWMEN/rawmen-1d3pw.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">17</div>
+                                            <div class="detail-product-name">RAWMEN: Food Fighter Arena</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">RAWMEN là một game chiến đấu nhiều người chơi điên rồ, mang đến một phiên bản hấp dẫn của game bắn súng đấu trường. Nhổ súp, ném thức ăn và chiến đấu như một đầu bếp cơ bắp trong một trò chơi mà vũ khí là một hỗn hợp kỳ quặc được tạo ra trong bếp.</div>
+                                            <div class="detail-product-capacity">10 GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/RocketLe/ROCKETWIDE.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">18</div>
+                                            <div class="detail-product-name">Rocket League</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Rocket League là sự kết hợp mạnh mẽ giữa bóng đá theo phong cách arcade và đua xe hỗn loạn với cơ chế điều khiển dễ hiểu và lối chơi mượt mà dựa trên vật lý.</div>
+                                            <div class="detail-product-capacity">20GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/Valo/valorant.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">19</div>
+                                            <div class="detail-product-name">Valorant</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">VALORANT là game bắn súng chiến thuật 5v5 dựa trên nhân vật trên đấu trường toàn cầu. Đánh bại, vượt mặt và tỏa sáng hơn đối thủ của bạn bằng khả năng chiến thuật, đấu súng chính xác và làm việc nhóm thích ứng.</div>
+                                            <div class="detail-product-capacity">100 GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-product-item-content js-products-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/zzz/zzz.jpg" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">20</div>
+                                            <div class="detail-product-name">Zenless Zone Zero</div>
+                                            <div class="detail-product-price">Free</div>
+                                            <div class="detail-product-discount">0%</div>
+                                            <div class="detail-product-genres">Base game</div>
+                                            <div class="detail-product-descrip">Chào mừng đến với New Eridu — Nơi nhân loại trỗi dậy một lần nữa! Zenless Zone Zero là một trò chơi lấy bối cảnh trong tương lai gần, khi thế giới bị tàn phá bởi một thảm họa bí ẩn có tên là "Hollows".</div>
+                                            <div class="detail-product-capacity">60 GB</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-page-mt">
+                                    <!-- <li class="page-active">1</li>
+                                    <li>2</li>
+                                    <li>3</li> -->
+                                </ul>
+                            </div>
+                            <div class="tab-pane-mt">
+                                <h3 class="detail-heading detail-per">DANH SÁCH KHÁCH HÀNG</h3>
+                                <div class="auth-form__controls">
+                                    <button class="btn btn-add-product btn-hove js-user-cus-addon">THÊM KHÁCH HÀNG</button>
+                                </div>
+                                <div class="detail-product-all">
+                                    <div class="detail-product-item detail-product-item-heading">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">Ảnh</div>
+                                            <div class="detail-product-code">Mã khách hàng</div>
+                                            <div class="detail-product-cus-name">Họ và tên</div>
+                                            <div class="detail-product-birth">Ngày sinh</div>
+                                            <div class="detail-product-address">Địa chỉ</div>
+                                            <div class="detail-product-email">Email</div>
+                                            <div class="detail-product-phone">Số điện thoại</div>
+                                            <div class="detail-product-capacity">Mật khẩu</div>
+                                            <div class="detail-product-fix">Sửa</div>
+                                            <div class="detail-product-delete">Xóa</div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/need-for-speed-heat-1lhdh.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">1</div>
+                                            <div class="detail-product-cus-name">Nguyễn Trung Dũng</div>
+                                            <div class="detail-product-birth">10/01/ 1990</div>
+                                            <div class="detail-product-address">WJ68+5PG, Tân Thuận, Châu Thành A, Hậu Giang, Việt Nam</div>
+                                            <div class="detail-product-email">ntd123@ gmail.com</div>
+                                            <div class="detail-product-phone">01248 27465</div>
+                                            <div class="detail-product-capacity">ntd123</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/need-for-speed-heat-1lhdh.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">2</div>
+                                            <div class="detail-product-cus-name">Nguyễn Trung Dũng</div>
+                                            <div class="detail-product-birth">10/01/ 1990</div>
+                                            <div class="detail-product-address">WJ68+5PG, Tân Thuận, Châu Thành A, Hậu Giang, Việt Nam</div>
+                                            <div class="detail-product-email">ntd123@ gmail.com</div>
+                                            <div class="detail-product-phone">01248 27465</div>
+                                            <div class="detail-product-capacity">ntd123</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/need-for-speed-heat-1lhdh.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">3</div>
+                                            <div class="detail-product-cus-name">Nguyễn Trung Dũng</div>
+                                            <div class="detail-product-birth">10/01/ 1990</div>
+                                            <div class="detail-product-address">WJ68+5PG, Tân Thuận, Châu Thành A, Hậu Giang, Việt Nam</div>
+                                            <div class="detail-product-email">ntd123@ gmail.com</div>
+                                            <div class="detail-product-phone">01248 27465</div>
+                                            <div class="detail-product-capacity">ntd123</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/need-for-speed-heat-1lhdh.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">4</div>
+                                            <div class="detail-product-cus-name">Nguyễn Trung Dũng</div>
+                                            <div class="detail-product-birth">10/01/ 1990</div>
+                                            <div class="detail-product-address">WJ68+5PG, Tân Thuận, Châu Thành A, Hậu Giang, Việt Nam</div>
+                                            <div class="detail-product-email">ntd123@ gmail.com</div>
+                                            <div class="detail-product-phone">01248 27465</div>
+                                            <div class="detail-product-capacity">ntd123</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/need-for-speed-heat-1lhdh.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">5</div>
+                                            <div class="detail-product-cus-name">Nguyễn Trung Dũng</div>
+                                            <div class="detail-product-birth">10/01/ 1990</div>
+                                            <div class="detail-product-address">WJ68+5PG, Tân Thuận, Châu Thành A, Hậu Giang, Việt Nam</div>
+                                            <div class="detail-product-email">ntd123@ gmail.com</div>
+                                            <div class="detail-product-phone">01248 27465</div>
+                                            <div class="detail-product-capacity">ntd123</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/need-for-speed-heat-1lhdh.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">6</div>
+                                            <div class="detail-product-cus-name">Nguyễn Trung Dũng</div>
+                                            <div class="detail-product-birth">10/01/ 1990</div>
+                                            <div class="detail-product-address">WJ68+5PG, Tân Thuận, Châu Thành A, Hậu Giang, Việt Nam</div>
+                                            <div class="detail-product-email">ntd123@ gmail.com</div>
+                                            <div class="detail-product-phone">01248 27465</div>
+                                            <div class="detail-product-capacity">ntd123</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/need-for-speed-heat-1lhdh.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">7</div>
+                                            <div class="detail-product-cus-name">Nguyễn Trung Dũng</div>
+                                            <div class="detail-product-birth">10/01/ 1990</div>
+                                            <div class="detail-product-address">WJ68+5PG, Tân Thuận, Châu Thành A, Hậu Giang, Việt Nam</div>
+                                            <div class="detail-product-email">ntd123@ gmail.com</div>
+                                            <div class="detail-product-phone">01248 27465</div>
+                                            <div class="detail-product-capacity">ntd123</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/need-for-speed-heat-1lhdh.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">7</div>
+                                            <div class="detail-product-cus-name">Nguyễn Trung Dũng</div>
+                                            <div class="detail-product-birth">10/01/ 1990</div>
+                                            <div class="detail-product-address">WJ68+5PG, Tân Thuận, Châu Thành A, Hậu Giang, Việt Nam</div>
+                                            <div class="detail-product-email">ntd123@ gmail.com</div>
+                                            <div class="detail-product-phone">01248 27465</div>
+                                            <div class="detail-product-capacity">ntd123</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-product-item detail-custome-item-content js-cus-item-mt">
+                                        <div class="detail-product-flex">
+                                            <div class="detail-product-img">
+                                                <img src="../../assets/img/need-for-speed-heat-1lhdh.png" style="width: 70%; height: 90%;" alt="">
+                                            </div>
+                                            <div class="detail-product-code">7</div>
+                                            <div class="detail-product-cus-name">Nguyễn Trung Dũng</div>
+                                            <div class="detail-product-birth">10/01/ 1990</div>
+                                            <div class="detail-product-address">WJ68+5PG, Tân Thuận, Châu Thành A, Hậu Giang, Việt Nam</div>
+                                            <div class="detail-product-email">ntd123@ gmail.com</div>
+                                            <div class="detail-product-phone">01248 27465</div>
+                                            <div class="detail-product-capacity">ntd123</div>
+                                            <div class="detail-product-fix">
+                                                <button class="btn-product-fd js-user-cus-fix">
+                                                    <i class="fa-solid fa-pen-to-square"></i>
+                                                </button>
+                                            </div>
+                                            <div class="detail-product-delete">
+                                                <button class="btn-product-fd js-user-cus-delete">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-page-cus-mt">
+                                    <!-- <li class="page-active">1</li>
+                                    <li>2</li>
+                                    <li>3</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal js-modal-addon">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form_addfix js-modal-auth-form_addfix">
+                <h3 class="auth-form__top-fixnow">THÊM SẢN PHẨM</h3>
+                <div class="auth-form__fixnow">
+                    <div class="auth-form__dayname row">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Ảnh</span>
+                            <input type="file" class="upload-box" required>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Tên sản phẩm</span>
+                            <input type="text" class="auth-form__input-buy-now" required>
+                        </div>
+                     </div>
+
+                    <div class="auth-form__dayname row">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Giá</span>
+                            <div class="auth-form__input-addfix">
+                                <button class="auth-form__input-addfix-btn">
+                                    VNĐ
+                                </button>
+                                <div class="auth-form__input-addfix-wrap">
+                                    <input type="text" class="auth-form__input-buy-now" required>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Khuyến mãi</span>
+                            <div class="auth-form__input-addfix">
+                                <button class="auth-form__input-addfix-btn">
+                                    %
+                                </button>
+                                <div class="auth-form__input-addfix-wrap">
+                                    <input type="text" class="auth-form__input-buy-now" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__dayname row">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Loại hàng</span>
+                            <form>
+                                <select class="select-genres">
+                                    <option value="au">Base Game</option>
+                                    <option value="ca">Edition</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Dung lượng</span>
+                            <input type="text" class="auth-form__input-buy-now" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__group">
+                        <span class="auth-form__datecard">Mô tả</span>
+                        <textarea class="text-area"></textarea>
+                    </div>
+                </div>
+                
+                <div class="auth-form__controls auth-form__controls-fix">
+                    <button class="btn btn-hove auth-form__controls-back btn-normal js-close-modal">HỦY</button>
+                    <input class="btn btn--primary btn-hove auth-form__controls-login js-close-modal" type="submit" value="THÊM"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal js-modal-fix">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form_addfix js-modal-auth-form_addfix">
+                <h3 class="auth-form__top-fixnow">SỬA SẢN PHẨM</h3>
+                <div class="auth-form__fixnow">
+                    <div class="auth-form__dayname row">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Ảnh</span>
+                            <input type="file" class="upload-box" required>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Tên sản phẩm</span>
+                            <input type="text" class="auth-form__input-buy-now" required>
+                        </div>
+                     </div>
+
+                    <div class="auth-form__dayname row">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Giá</span>
+                            <div class="auth-form__input-addfix">
+                                <button class="auth-form__input-addfix-btn">
+                                    VNĐ
+                                </button>
+                                <div class="auth-form__input-addfix-wrap">
+                                    <input type="text" class="auth-form__input-buy-now" required>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Khuyến mãi</span>
+                            <div class="auth-form__input-addfix">
+                                <button class="auth-form__input-addfix-btn">
+                                    %
+                                </button>
+                                <div class="auth-form__input-addfix-wrap">
+                                    <input type="text" class="auth-form__input-buy-now" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__dayname row">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Loại hàng</span>
+                            <form>
+                                <select class="select-genres">
+                                    <option value="au">Base Game</option>
+                                    <option value="ca">Edition</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Dung lượng</span>
+                            <input type="text" class="auth-form__input-buy-now" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__group">
+                        <span class="auth-form__datecard">Mô tả</span>
+                        <textarea class="text-area"></textarea>
+                    </div>
+                </div>
+                
+                <div class="auth-form__controls auth-form__controls-fix">
+                    <button class="btn btn-hove auth-form__controls-back btn-normal js-close-fix">HỦY</button>
+                    <input class="btn btn--primary btn-hove auth-form__controls-login js-close-fix" type="submit" value="SỬA"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal js-modal-delete">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form_delete js-modal-auth-form_addfix">
+                <div class="modal-delete-icon">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="auth-form__delete">
+                    XÁC NHẬN XÓA SẢN PHẨM NÀY?
+                </div>
+                
+                <div class="auth-form__controls-delete">
+                    <button class="btn btn-hove auth-form__controls-back btn-normal js-close-delete">HỦY</button>
+                    <input class="btn btn--primary btn-hove auth-form__controls-login js-close-delete" type="submit" value="XÓA"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal js-modal-cus-addon">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form_addfix js-modal-auth-form_addfix">
+                <h3 class="auth-form__top-fixnow">THÊM KHÁCH HÀNG</h3>
+                <div class="auth-form__fixnow">
+                    <div class="auth-form__dayname row">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Ảnh</span>
+                            <input type="file" class="upload-box" required>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Họ và tên</span>
+                            <input type="text" class="auth-form__input-buy-now" required>
+                        </div>
+                     </div>
+
+                    <div class="auth-form__dayname row">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Ngày sinh</span>
+                            <input type="date" class="auth-form__input-buy-now" required> 
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Địa chỉ</span>
+                            <input type="text" class="auth-form__input-buy-now" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__dayname row">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Email</span>
+                            <input type="email" class="auth-form__input-buy-now" required>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Số điện thoại</span>
+                            <input type="tel" class="auth-form__input-buy-now" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__group">
+                        <span class="auth-form__datecard">Mật khẩu</span>
+                        <input type="text" required class="auth-form__input-buy-now">
+                    </div>
+                </div>
+                
+                <div class="auth-form__controls auth-form__controls-fix">
+                    <button class="btn btn-hove auth-form__controls-back btn-normal js-close-modal-cus">HỦY</button>
+                    <input class="btn btn--primary btn-hove auth-form__controls-login js-close-modal-cus" type="submit" value="THÊM"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal js-modal-cus-fix">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form_addfix js-modal-auth-form_addfix">
+                <h3 class="auth-form__top-fixnow">SỬA KHÁCH HÀNG</h3>
+                <div class="auth-form__fixnow">
+                    <div class="auth-form__dayname row">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Ảnh</span>
+                            <input type="file" class="upload-box" required>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Họ và tên</span>
+                            <input type="text" class="auth-form__input-buy-now" required>
+                        </div>
+                     </div>
+
+                    <div class="auth-form__dayname row">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Ngày sinh</span>
+                            <input type="date" class="auth-form__input-buy-now" required> 
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Địa chỉ</span>
+                            <input type="text" class="auth-form__input-buy-now" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__dayname row">
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Email</span>
+                            <input type="email" class="auth-form__input-buy-now" required>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <span class="auth-form__datecard">Số điện thoại</span>
+                            <input type="tel" class="auth-form__input-buy-now" required>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__group">
+                        <span class="auth-form__datecard">Mật khẩu</span>
+                        <input type="text" required class="auth-form__input-buy-now">
+                    </div>
+                </div>
+                
+                <div class="auth-form__controls auth-form__controls-fix">
+                    <button class="btn btn-hove auth-form__controls-back btn-normal js-close-fix-cus">HỦY</button>
+                    <input class="btn btn--primary btn-hove auth-form__controls-login js-close-fix-cus" type="submit" value="SỬA"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal js-modal-cus-delete">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form_delete js-modal-auth-form_addfix">
+                <div class="modal-delete-icon">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="auth-form__delete">
+                    XÁC NHẬN XÓA KHÁCH HÀNG NÀY?
+                </div>
+                
+                <div class="auth-form__controls-delete">
+                    <button class="btn btn-hove auth-form__controls-back btn-normal js-close-delete-cus">HỦY</button>
+                    <input class="btn btn--primary btn-hove auth-form__controls-login js-close-delete-cus" type="submit" value="XÓA"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ./temp.js -->
+    <script src="./temp.js"></script>
+</body>
+</html>

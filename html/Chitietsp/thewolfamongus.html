@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/grid.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome-free-6.6.0-web/css/all.css">
+    <title>The Wolf Among Us 2</title>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="grid wide">    
+                <div class="header-top hide-on-mobile">
+                        <!-- Logo -->
+                        <div class="header__logo">
+                            <a href="../../Trang-Chu.html" class="header__logo-link">Meracisa</a>
+                        </div>
+    
+                        <!-- Thông báo + Trợ giúp + Tài khoản -->
+                        <ul class="header-top__navbar-list">
+                            <!-- Thông báo -->
+                            <li class="header-top__navbar-item">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fa-regular fa-bell"></i>
+                                    Thông báo
+                                </a>
+                            </li>
+                            <!-- Đăng ký -->
+                            <li class="header-top__navbar-item ">
+                                <button class="btn-header-register header__navbar-item-link header__navbar-item--strong header__navbar-item--separate js-register-user">
+                                    Đăng ký
+                                </button>
+                            </li>
+                            <li class="header-top__navbar-item">
+                                <button class="btn-header-login header__navbar-item-link header__navbar-item--strong js-login-user">
+                                    Đăng nhập
+                                </button>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="header-bottom">
+                    <div class="nav__pc">
+                        <ul class="header-bottom__nav hide-on-mobile-tablet">
+                            <li><a href="../../Trang-Chu.html" style="text-decoration: none;">Trang chủ</a></li>
+                            <li>
+                                <a href="#">Cửa hàng của bạn</a>
+                                <ul class="header-bottom__subnav">
+                                    <li><a href="../Theloai/recommend.html">Khuyến nghị cộng đồng</a></li>
+                                    <li><a href="#">Đã xem gần đây</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Mới & Đáng chú ý</a>
+                                <ul class="header-bottom__subnav">
+                                    <li><a href="../Theloai/topseller.html">Bán chạy nhất</a></li>
+                                    <li><a href="../Theloai/mostplayed.html">Chơi nhiều nhất</a></li>
+                                    <li><a href="../Theloai/topnewrelease.html">Phát hành mới</a></li>
+                                    <li><a href="../Theloai/upcoming.html">Phát hành sắp ra mắt</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Danh mục</a>
+                                <div class="header-bottom__subnav header-bottom__subnav-split">
+                                    <div class="header-bottom-double">
+                                        <ul class="header-bottom__subnav-part">
+                                            <li><a href="../Theloai/action.html">Hành động</a></li>
+                                            <li><a href="../Theloai/openworld.html">Thế giới mở</a></li>
+                                            <li><a href="../Theloai/adventure.html">Phiêu lưu</a></li>
+                                            <li><a href="../Theloai/strategy.html">Chiến thuật</a></li>
+                                            <li><a href="../Theloai/indie.html">Indie</a></li>
+                                        </ul>
+                                        <ul class="header-bottom__subnav-part">
+                                            <li><a href="../Theloai/sprot.html">Thể thao</a></li>
+                                            <li><a href="../Theloai/racing.html">Đua tốc độ</a></li>
+                                            <li><a href="../Theloai/simple.html">Đơn giản</a></li>
+                                            <li><a href="../Theloai/rpg.html">RPG</a></li>
+                                            <li><a href="../Theloai/team.html">Tổ đội</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Labs</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Bar mobile + tablet -->
+                    <label for="nav-mobile-input" class="nav__bars-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <input type="checkbox" hidden id="nav-mobile-input" class="nav__input">
+
+                    <div class="nav__mobile">
+                        <ul class="nav__mobile-list">
+                            <li><a class="nav__mobile-link" href="../../Trang-Chu.html">Trang chủ</a></li>
+                            <li>
+                                <a class="nav__mobile-link" href="#">
+                                    <label for="nav-mobile-subnav-input" class="nav__chevron-btn">
+                                        Cửa hàng của bạn
+                                        <i class="subnav-mobile-icon fa-solid fa-chevron-down"></i>
+                                    </label>
+                                </a>
+                                
+                                <input type="checkbox" hidden id="nav-mobile-subnav-input" class="nav__subnav-input">
+                                <ul class="nav-mobile__subnav">
+                                    <li><a href="../Theloai/recommend.html">Khuyến nghị cộng đồng</a></li>
+                                    <li><a href="#">Đã xem gần đây</a></li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a class="nav__mobile-link" href="#">
+                                    <label for="nav__mobile-subnav-new" class="nav__chevron-btn">
+                                        Mới & Đáng chú ý
+                                        <i class="subnav-mobile-icon-pt2 fa-solid fa-chevron-down"></i>
+                                    </label>
+                                </a>
+                                <input type="checkbox" hidden id="nav__mobile-subnav-new" class="nav__subnav-input">
+                                <ul class="nav-mobile__subnav">
+                                    <li><a href="../Theloai/topseller.html">Bán chạy nhất</a></li>
+                                    <li><a href="../Theloai/mostplayed.html">Chơi nhiều nhất</a></li>
+                                    <li><a href="../Theloai/topnewrelease.html">Phát hành mới</a></li>
+                                    <li><a href="../Theloai/upcoming.html">Phát hành sắp ra mắt</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav__mobile-link" href="#">Tin tức</a></li>
+                            <li><a class="nav__mobile-link" href="#">Labs</a></li>
+                            <li>
+                                <a class="nav__mobile-link hide-on-tablet" href="#">
+                                    <button class="btn-header-register header__navbar-item-link header__navbar-item--strong header__navbar-item--separate js-register-user">
+                                        Đăng ký
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav__mobile-link hide-on-tablet" href="#">
+                                    <button class="btn-header-login header__navbar-item-link header__navbar-item--strong js-login-user">
+                                        Đăng nhập
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <label for="nav-mobile-input" class="nav__overlay"></label>
+
+                    <div class="header__logo-mobile">
+                        <a href="#" class="header__logo-link">Meracisa</a>
+                    </div>
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+
+                    <!-- Search -->
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+    
+                            <!-- Lịch sử tìm kiếm -->
+                            <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="../../Chương11/index.html">God of war</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">League of Legends</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row app__content">
+                    <h3 class="detail-heading" style="padding-right: 200px">The Wolf Among Us 2</h3>
+                    <div class="col l-0 m-12 c-12 position-fi ">
+                        <img src="../../assets/img/twau2/The_Wolf_Among_Us_2_Teaser.jpg" width="100%" class="detail-iconc" alt="">
+                        <div class="detail-btn-genres">
+                            <span class="detail-btnde">Base game</span>  
+                        </div>
+                        <div class="detail-btns-list">
+                            <button href="" class="detail-btn-item detail-btn-coming-soon">Sắp ra mắt</button>
+                            <a href="" class="detail-btn-item detail-btn-add-to">Thêm vào giỏ</a> 
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Nhà phát triển</span>
+                            <span class="detail-dev-name">Telltale</span>
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Nhà xuất bản</span>
+                            <span class="detail-dev-name">Telltale</span>
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Ngày ra mắt</span>
+                            <span class="detail-dev-name">Sắp ra mắt</span>
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Nền tảng</span>
+                            <span class="detail-dev-name">
+                                <i class="fa-brands fa-windows"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col l-9 m-12 c-12">  
+                        <div class="slide-show">
+                            <div class="list-imgs jv-list-imgs">
+                                <img src="../../assets/img/twau2/twau1.png" class="img-item" width="100%" alt="">
+                                <img src="../../assets/img/twau2/twau2.png" class="img-item" width="100%" alt="">
+                                <img src="../../assets/img/twau2/twau3.png" class="img-item" width="100%" alt="">
+                                <img src="../../assets/img/twau2/twau4.png" class="img-item" width="100%" alt="">
+                                <!-- <div class="img-item jv-img" style="background-image: url('../assets/img/NFS/nfs2.jpg');"></div>
+                                <div class="img-item jv-img" style="background-image: url('../assets/img/NFS/nfs3.jpg');"></div>
+                                <div class="img-item jv-img" style="background-image: url('../assets/img/NFS/nfs4.jpg');"></div> -->
+                            </div>
+                            <div class="detail-btns">
+                                <div class="btn-left btn jv-btn-left">
+                                    <i class="btn-width fa-solid fa-chevron-left jv-btn-left"></i>
+                                </div>
+                                <div class="btn-right btn jv-btn-right">
+                                    <i class="btn-width fa-solid fa-chevron-right jv-btn-right"></i>
+                                </div>
+                            </div>
+                            <div class="index-imgs">
+                                <div class="index-item index-item-0 active"></div>
+                                <div class="index-item index-item-1"></div>
+                                <div class="index-item index-item-2"></div>
+                                <div class="index-item index-item-3"></div>
+                            </div>
+                        </div>
+
+                        <!-- Tóm tắt -->
+                        <p class="detail-descrip">
+                            Các nhân vật trong truyện cổ tích là có thật và đi lại giữa chúng ta tại Thành phố New York. Vào vai Bigby, "The Big Bad Wolf" và Cảnh sát trưởng của Fabletown, khi bạn trở lại thế giới trinh thám đen tối, nơi không có kết thúc trong truyện cổ tích.
+                        </p>
+
+                        <!-- Thể loại / Tính năng -->
+                        <div class="detail-category">
+                            <div class="row">
+                                <div class="col l-6 m-12 c-12 border-right-solid">
+                                    <h4 class="detail-category-heading">Thể loại</h4>
+                                    <ul class="detail-category-list">
+                                        <li class="detail-category-item">
+                                            <a href="" class="detail-category-item-name">Hành động</a>
+                                        </li>
+                                        <li class="detail-category-item">
+                                            <a href="" class="detail-category-item-name">Phiêu lưu</a>
+                                        </li>
+                                        <li class="detail-category-item">
+                                            <a href="" class="detail-category-item-name">Indie</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <h4 class="detail-category-heading">Tính chất</h4>
+                                    </h4>
+                                    <ul class="detail-category-list">
+                                        <li class="detail-category-item">
+                                            <a href="" class="detail-category-item-name">Người chơi đơn</a>
+                                        </li>
+                                        </li>                      
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mô tả trò chơi -->
+                        <div class="detail-content mt-48">
+                            <h3 class="detail-content-heading">The Wolf Among Us 2</h3>
+                            <p class="detail-content-para">
+                                Các nhân vật trong truyện cổ tích là có thật và đi lại giữa chúng ta tại Thành phố New York. Vào vai Bigby, "The Big Bad Wolf" và Cảnh sát trưởng của Fabletown, khi bạn trở lại thế giới trinh thám đen tối, nơi không có kết thúc trong truyện cổ tích.
+                            </p>
+                        </div>
+
+                        <!-- Đánh giá -->
+                        
+
+                        <!-- Review -->
+                        
+
+                        <!-- Cấu hình -->
+                         <div class="detail-configuration">
+                            <h3 class="detail-content-heading">Yêu cầu The Wolf Among Us 2</h3>
+                            <div class="configuration-content">
+                                <!-- Tab -->
+                                <div class="configuration-tab">
+                                    <div class="tab-item">
+                                        <span class="tab-item-name">Windows</span> 
+                                    </div>
+                                </div>
+
+                                <!-- Content -->
+                                 <div class="configuration-tab-content">
+                                    <div class="tab-pane-m">
+                                        <div class="tab-pane-minimum">
+                                            <h3 class="detail-content-heading">Tối thiểu</h3>
+                                            <span class="tab-pane-extra">Phiên bản OS</span>
+                                            <span class="tab-pane-main">TBD</span>
+
+                                            <span class="tab-pane-extra">CPU</span>
+                                            <span class="tab-pane-main tab-pane-main-cpu">TBD</span>
+
+                                            <span class="tab-pane-extra">Memory</span>
+                                            <span class="tab-pane-main">TBD</span>
+                                            
+                                            <span class="tab-pane-extra">GPU</span>
+                                            <span class="tab-pane-main tab-pane-main-gpu">TBD</span>
+
+                                            <span class="tab-pane-extra">DirectX</span>
+                                            <span class="tab-pane-main">TBD</span>
+
+                                            <span class="tab-pane-extra">Dung lượng</span>
+                                            <span class="tab-pane-main">TBD</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane-r">
+                                        <div class="tab-pane-recommended">
+                                            <h3 class="detail-content-heading">Khuyến nghị</h3>
+                                            <span class="tab-pane-extra">Phiên bản OS</span>
+                                            <span class="tab-pane-main">TBD</span>
+
+                                            <span class="tab-pane-extra">CPU</span>
+                                            <span class="tab-pane-main tab-pane-main-cpu">TBD</span>
+
+                                            <span class="tab-pane-extra">Memory</span>
+                                            <span class="tab-pane-main">TBD</span>
+                                            
+                                            <span class="tab-pane-extra">GPU</span>
+                                            <span class="tab-pane-main tab-pane-main-gpu">TBD</span>
+
+                                            <span class="tab-pane-extra">DirectX</span>
+                                            <span class="tab-pane-main">TBD</span>
+
+                                            <span class="tab-pane-extra">Dung lượng</span>
+                                            <span class="tab-pane-main">TBD</span>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12 position-fi hide-on-mobile-tablet">
+                        <img src="../../assets/img/twau2/egs-thewolfamongus2-telltale-ic1-400x400-25d75e636aa7.avif" width="100%" class="detail-iconc" alt="">
+                        <div class="detail-btn-genres">
+                            <span class="detail-btnde">Base game</span>  
+                        </div>
+                        <div class="detail-btns-list">
+                            <button href="" class="detail-btn-item detail-btn-coming-soon">Sắp ra mắt</button>
+                            <a href="" class="detail-btn-item detail-btn-add-to">Thêm vào giỏ</a> 
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Nhà phát triển</span>
+                            <span class="detail-dev-name">Telltale</span>
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Nhà xuất bản</span>
+                            <span class="detail-dev-name">Telltale</span>
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Ngày ra mắt</span>
+                            <span class="detail-dev-name">Sắp ra mắt</span>
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Nền tảng</span>
+                            <span class="detail-dev-name">
+                                <i class="fa-brands fa-windows"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row footer__content">
+                    <div class="col l-4 m-6 c-12">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách bảo mật</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Thời hạn dịch vụ</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách hoàn tiền</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item-icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item-icon fa-brands fa-twitter"></i>
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item-icon fa-brands fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer-text">
+                        © 2024 Meracisa Corporation. Bảo lưu mọi quyền. Tất cả các thương hiệu là tài sản của chủ sở hữu tương ứng tại Việt Nam và các quốc gia khác.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal form đăng nhập -->
+    <div class="modal js-modal-login">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Login form-->
+            <div class="auth-form">
+                <div class="auth-form__container js-modal-container">
+                    <form>
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading auth-form__heading-login">Đăng nhập</h3>
+                            <button class="auth-form__switch-btn btn-header-register auth-form__heading-login-regis js-switch-register">Đăng ký</button>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" placeholder="Nhập email của bạn" required class="auth-form__input-buy-now">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input-buy-now" required placeholder="Nhập mật khẩu">
+                            </div> 
+                        </div>
+
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp</a>
+                            </div>
+
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn-hove auth-form__controls-back btn-normal js-modal-close">TRỞ LẠI</button>
+                            <input class="btn btn--primary btn-hove auth-form__controls-login" type="submit" value="ĐĂNG NHẬP"></input>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="auth-form__socials js-modal-auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal form đăng ký -->
+    <div class="modal js-modal-register">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Register form-->
+            <div class="auth-form">
+                <div class="auth-form__container js-modal-container">
+                    <form>
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <button class="auth-form__switch-btn btn-header-login js-switch-login">Đăng nhập</button>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input-buy-now" placeholder="Nhập họ và tên" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="date" class="auth-form__input" placeholder="Nhập ngày sinh" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập địa chỉ" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="tel" class="auth-form__input" placeholder="Nhập số điện thoại" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Nhập email" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu" required>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với Meracisa về
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn-hove auth-form__controls-back btn-normal js-modal-close">TRỞ LẠI</button>
+                            <input class="btn btn-hove btn--primary" type="submit" value="ĐĂNG KÝ"></input>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="auth-form__socials js-modal-auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./coming.js"></script>
+</body>
+</html>

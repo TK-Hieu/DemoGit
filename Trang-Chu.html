@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="">
+    <title>Meracisa</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="grid wide">    
+                <div class="header-top hide-on-mobile">
+                        <!-- Logo -->
+                        <div class="header__logo">
+                            <a href="#" class="header__logo-link">Meracisa</a>
+                        </div>
+    
+                        <!-- Thông báo + Trợ giúp + Tài khoản -->
+                        <ul class="header-top__navbar-list">
+                            <!-- Thông báo -->
+                            <li class="header-top__navbar-item">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fa-regular fa-bell"></i>
+                                    Thông báo
+                                </a>
+                            </li>
+                            <!-- Đăng ký -->
+                            <li class="header-top__navbar-item ">
+                                <button class="btn-header-register header__navbar-item-link header__navbar-item--strong header__navbar-item--separate js-register-user">
+                                    Đăng ký
+                                </button>
+                            </li>
+                            <li class="header-top__navbar-item">
+                                <button class="btn-header-login header__navbar-item-link header__navbar-item--strong js-login-user">
+                                    Đăng nhập
+                                </button>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="header-bottom">
+                    <div class="nav__pc">
+                        <ul class="header-bottom__nav hide-on-mobile-tablet">
+                            <li><a href="./Trang-Chu.html">Trang chủ</a></li>
+                            <li>
+                                <a href="#">Cửa hàng của bạn</a>
+                                <ul class="header-bottom__subnav">
+                                    <li><a href="./html/Theloai/recommend.html">Khuyến nghị cộng đồng</a></li>
+                                    <li><a href="#">Đã xem gần đây</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Mới & Đáng chú ý</a>
+                                <ul class="header-bottom__subnav">
+                                    <li><a href="./html/Theloai/topseller.html">Bán chạy nhất</a></li>
+                                    <li><a href="./html/Theloai/mostplayed.html">Chơi nhiều nhất</a></li>
+                                    <li><a href="./html/Theloai/topnewrelease.html">Phát hành mới</a></li>
+                                    <li><a href="./html/Theloai/upcoming.html">Phát hành sắp ra mắt</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Danh mục</a>
+                                <div class="header-bottom__subnav header-bottom__subnav-split">
+                                    <div class="header-bottom-double">
+                                        <ul class="header-bottom__subnav-part">
+                                            <li><a href="./html/Theloai/action.html">Hành động</a></li>
+                                            <li><a href="./html/Theloai/openworld.html">Thế giới mở</a></li>
+                                            <li><a href="./html/Theloai/adventure.html">Phiêu lưu</a></li>
+                                            <li><a href="./html/Theloai/strategy.html">Chiến thuật</a></li>
+                                            <li><a href="./html/Theloai/indie.html">Indie</a></li>
+                                        </ul>
+                                        <ul class="header-bottom__subnav-part">
+                                            <li><a href="./html/Theloai/sprot.html">Thể thao</a></li>
+                                            <li><a href="./html/Theloai/racing.html">Đua tốc độ</a></li>
+                                            <li><a href="./html/Theloai/simple.html">Đơn giản</a></li>
+                                            <li><a href="./html/Theloai/rpg.html">RPG</a></li>
+                                            <li><a href="./html/Theloai/team.html">Tổ đội</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Labs</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Bar mobile + tablet -->
+                    <label for="nav-mobile-input" class="nav__bars-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <input type="checkbox" hidden id="nav-mobile-input" class="nav__input">
+
+                    <div class="nav__mobile">
+                        <ul class="nav__mobile-list">
+                            <li><a class="nav__mobile-link" href="#">Trang chủ</a></li>
+                            <li>
+                                <a class="nav__mobile-link" href="#">
+                                    <label for="nav-mobile-subnav-input" class="nav__chevron-btn">
+                                        Cửa hàng của bạn
+                                        <i class="subnav-mobile-icon fa-solid fa-chevron-down"></i>
+                                    </label>
+                                </a>
+                                
+                                <input type="checkbox" hidden id="nav-mobile-subnav-input" class="nav__subnav-input">
+                                <ul class="nav-mobile__subnav">
+                                    <li><a href="./html/Theloai/recommend.html">Khuyến nghị cộng đồng</a></li>
+                                    <li><a href="#">Đã xem gần đây</a></li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a class="nav__mobile-link" href="#">
+                                    <label for="nav__mobile-subnav-new" class="nav__chevron-btn">
+                                        Mới & Đáng chú ý
+                                        <i class="subnav-mobile-icon-pt2 fa-solid fa-chevron-down"></i>
+                                    </label>
+                                </a>
+                                <input type="checkbox" hidden id="nav__mobile-subnav-new" class="nav__subnav-input">
+                                <ul class="nav-mobile__subnav">
+                                    <li><a href="./html/Theloai/topseller.html">Bán chạy nhất</a></li>
+                                    <li><a href="./html/Theloai/mostplayed.html">Chơi nhiều nhất</a></li>
+                                    <li><a href="./html/Theloai/topnewrelease.html">Phát hành mới</a></li>
+                                    <li><a href="./html/Theloai/upcoming.html">Phát hành sắp ra mắt</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav__mobile-link" href="#">Tin tức</a></li>
+                            <li><a class="nav__mobile-link" href="#">Labs</a></li>
+                            <li>
+                                <a class="nav__mobile-link hide-on-tablet" href="#">
+                                    <button class="btn-header-register header__navbar-item-link header__navbar-item--strong header__navbar-item--separate js-register-user">
+                                        Đăng ký
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav__mobile-link hide-on-tablet" href="#">
+                                    <button class="btn-header-login header__navbar-item-link header__navbar-item--strong js-login-user">
+                                        Đăng nhập
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <label for="nav-mobile-input" class="nav__overlay"></label>
+
+                    <div class="header__logo-mobile">
+                        <a href="#" class="header__logo-link">Meracisa</a>
+                    </div>
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+
+                    <!-- Search -->
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+    
+                            <!-- Lịch sử tìm kiếm -->
+                            <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">God of war</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">League of Legends</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row app__content">
+                    <div class="col l-2 m-0 c-0">
+                        <div class="category">
+                            <h3 class="category-heading">Nên xem</h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Bởi bạn bè</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Theo thẩm định viên</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Theo nhãn</a>
+                                </li>
+                            </ul>
+                            <h3 class="category-heading">Duyệt theo danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="./html/Theloai/topseller.html" class="category-item__link">Bán chạy nhất</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./html/Theloai/topnewrelease.html" class="category-item__link">Phát hành mới</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./html/Theloai/upcoming.html" class="category-item__link">Phát hành sắp ra mắt</a>
+                                </li>
+                            </ul>
+                            <h3 class="category-heading">Duyệt theo thể loại</h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="./html/Theloai/free.html" class="category-item__link">Chơi miễn phí</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./html/Theloai/team.html" class="category-item__link">Tổ đội</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./html/Theloai/strategy.html" class="category-item__link">Chiến thuật</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./html/Theloai/action.html" class="category-item__link">Hành động</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./html/Theloai/indie.html" class="category-item__link">Indie</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./html/Theloai/rpg.html" class="category-item__link">RPG</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./html/Theloai/simple.html" class="category-item__link">Đơn giản</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./html/Theloai/adventure.html" class="category-item__link">Phiêu lưu</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="./html/Theloai/sprot.html" class="category-item__link">Thể thao</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="col l-10 m-12 c-12">
+                        <div class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="./html/Theloai/free.html" class="mobile-category__link">Chơi miễn phí</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="./html/Theloai/rpg.html" class="mobile-category__link">RPG</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="./html/Theloai/strategy.html" class="mobile-category__link">Chiến thuật</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="./html/Theloai/strategy.html" class="mobile-category__link">Tổ đội</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="./html/Theloai/indie.html" class="mobile-category__link">Indie</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="./html/Theloai/action.html" class="mobile-category__link">Hành động</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="./html/Theloai/rpg.html" class="mobile-category__link">RPG</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="./html/Theloai/adventure.html" class="mobile-category__link">Phiêu lưu</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="./html/Theloai/sprot.html" class="mobile-category__link">Thể thao</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Top New Release -->
+                        <a href="./html/Theloai/topnewrelease.html" class="body-heading-link">
+                            MỚI RA MẮT
+                            <i class="body-heading-icon fa-solid fa-chevron-right"></i>
+                        </a>
+                        <div class="game-product mt-24">
+                            <div class="row">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="./html/Chitietsp/Needforspeed.html" style="text-decoration: none">
+
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/need-for-speed-heat-1lhdh.png);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">Need for Speed Heat Deluxe Edition</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__discount">25%</span>
+                                                <div class="game-product-item__on">
+                                                    <span class="game-product-item__price-old">500.000đ</span>
+                                                    <span class="game-product-item__price-new">375.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="./html/Chitietsp/GhostofT.html" style="text-decoration: none">
+
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/Gots/capsule_616x353.jpg);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">Ghost of Tsushima DIRECTOR'S CUT</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__free">1.500.000đ</span>                      
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <!-- Game Product Item-->
+                                    <a href="./html/Chitietsp/Madden25.html" style="text-decoration: none;">
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/Madden25/madden25.png);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">EA SPORT Madden NFL 25</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__free">1.850.000đ</span>                      
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="./html/Chitietsp/DyingLight.html" style="text-decoration: none;">
+
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/DyingLight/dyinglight.png);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">Dying Light: Standard Edition</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__discount">80%</span>
+                                                <div class="game-product-item__on">
+                                                    <span class="game-product-item__price-old">510.000đ</span>
+                                                    <span class="game-product-item__price-new">102.000đ</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-0">
+                                    <!-- Game Product Item-->
+                                     <a href="./html/Chitietsp/BlackMythWukong.html" style="text-decoration: none;">
+                                         <div class="game-product-item">
+                                             <div class="game-product-item__img" style="background-image: url(./assets/img/BlackMyth/blackmythwukong-review.jpg);"></div>
+                                             <span class="game-product-item__decrip">Base game</span>
+                                             <h4 class="game-product-item__name">Black Myth: Wukong</h4>
+                                             <div class="game-product-item__price">
+                                                 <span class="game-product-item__free">1.500.000đ</span>                      
+                                             </div>
+                                         </div>
+                                     </a>
+                                </div>                    
+                            </div>
+                        </div>
+
+                        <!-- Free Game -->
+                        <div class="mt-24"></div>
+                        <a href="./html/Theloai/free.html" class="body-heading-link">
+                            MIỄN PHÍ
+                            <i class="body-heading-icon fa-solid fa-chevron-right"></i>
+                        </a>
+                        <div class="game-product mt-24">
+                            <div class="row">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="./html/Chitietsp/zzz.html" style="text-decoration: none;">
+
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/zzz/zzz.jpg);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">Zenless Zone Zero</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__free">Free</span>                      
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="./html/Chitietsp/pubg.html" style="text-decoration: none;">
+
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/pubg/pubg.jpg);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">PUBG: BATTLEGROUNDS</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__free">Free</span>                      
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="./html/Chitietsp/destiny.html" style="text-decoration: none;">
+
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/destiny2/destiny2.png);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">Destiny 2</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__free">Free</span>                      
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="./html/Chitietsp/valorant.html" style="text-decoration: none;">
+
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/Valo/valorant.jpg);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">Valorant</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__free">Free</span>                      
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-0">
+                                    <a href="./html/Chitietsp/lol.html" style="text-decoration: none;">
+
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/lol/lol.png);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">League of Legends</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__free">Free</span>                      
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News -->
+                        <div class="mt-24"></div>
+                        <div class="daily-new">
+                            <div class="row">
+                                <div class="col l-6 m-12 c-12">
+                                    <a href="./html/Chitietsp/godofwar.html" style="text-decoration: none;">
+                                        <div class="daily-new-item">
+                                            <div class="daily-new-item__img" style="background-image: url(./assets/img/god-of-war.png);"></div>
+                                            <h4 class="daily-new-item__name">God of War Ragnarok - Available September 19</h4>
+                                            <h5 class="daily-new-item__descrip">Hãy vào vai Kratos và con trai của anh ấy khi họ bắt đầu hành trình ngăn chặn
+                                                sự xuất hiện của Ragnarok
+                                            </h5>
+                                            <span class="daily-new-item__price">1.625.000đ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <a href="./html/Chitietsp/concord.html" style="text-decoration: none;">
+                                        <div class="daily-new-item">
+                                            <div class="daily-new-item__img" style="background-image: url(./assets/img/Concord/concord.png);"></div>
+                                            <h4 class="daily-new-item__name">Concord</h4>
+                                            <h5 class="daily-new-item__descrip">
+                                                Tập hợp đội quân ngoài vòng pháp luật Freegunner và hợp tác trực tuyến với bạn bè để tham gia chế độ PVP 5v5 ly kỳ trên khắp thiên hà.
+                                            </h5>
+                                            <span class="daily-new-item__price">1.080.000đ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Top Sellers / Most Played / Top Upcoming Wishlisted -->
+                        <div class="game-product mt-24">
+                            <div class="row">
+                                <div class="col l-4 m-12 c-12 grid__column-2-3--separate">
+                                    <a href="./html/Theloai/topseller.html" class="body-heading-link">
+                                        Bán Chạy
+                                        <i class="body-heading-icon fa-solid fa-chevron-right"></i>
+                                    </a>
+                                    <a href="./html/Chitietsp/BlackMythWukong.html" style="text-decoration: none;">
+                                        <div class="row">
+                                            <div class="game-split-row3">
+                                                <div class="game-split-row3-item__img">
+                                                    <img class="game-split-row3__img" src="./assets/img/BlackMyth/blackmythwukong-review.jpg" alt="">
+                                                </div>
+                                                <div class="game-row3-content">
+                                                    <h4 class="game-split-row3-item__name">Black Myth: Wukong</h4>
+                                                    <div class="game-split-row3-item__price">
+                                                        <span class="game-split-row3-item__free">1.500.000đ</span> 
+                                                    </div>
+                                                </div>
+                                            </div>                     
+                                        </div>
+                                     </a>   
+                                    <a href="./html/Chitietsp/deadbydaylight.html" style="text-decoration: none;">
+                                        <div class="row">                 
+                                            
+                                                <div class="game-split-row3">
+                                                    <div class="game-split-row3-item__img">
+                                                        <img class="game-split-row3__img" src="./assets/img/dbd/dbd.png" alt="">
+                                                    </div>
+                                                    <div class="game-row3-content">
+                                                        <h4 class="game-split-row3-item__name">Dead by Daylight</h4>
+                                                        <div class="game-split-row3-item__price">
+                                                            <span class="game-split-row3-item__free">1.500.000đ</span> 
+                                                        </div>  
+                                                    </div>
+                                                </div>                   
+                                        </div>
+                                    </a>
+                                    <a href="./html/Chitietsp/Madden25.html" style="text-decoration: none;">
+                                        <div class="row">                                    
+                                            <div class="game-split-row3">
+                                                <div class="game-split-row3-item__img">
+                                                    <img class="game-split-row3__img" src="./assets/img/Madden25/madden25.png" alt="">
+                                                </div>
+                                                <div class="game-row3-content">
+                                                    <h4 class="game-split-row3-item__name">EA Sport Madden NFL 25</h4>
+                                                    <div class="game-split-row3-item__price">
+                                                        <span class="game-split-row3-item__free">1.850.000đ</span> 
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./html/Chitietsp/assassincm.html" style="text-decoration: none;">
+                                        <div class="row">                                    
+                                            <div class="game-split-row3">
+                                                <div class="game-split-row3-item__img">
+                                                    <img class="game-split-row3__img" src="./assets/img/Assassin CM/assansinmc.jpg" alt="">
+                                                </div>
+                                                <div class="game-row3-content">
+                                                    <h4 class="game-split-row3-item__name">Assassin's Creed Mirage</h4>
+                                                    <div class="game-split-row3-item__price">
+                                                        <span class="game-split-row3-item__discount">50%</span>
+                                                        <span class="game-split-row3-item__price-old">1.285.000đ</span>
+                                                        <span class="game-split-row3-item__price-new">643.000đ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-4 m-12 c-12 grid__column-2-3--separate">
+                                    <a href="./html/Theloai/mostplayed.html" class="body-heading-link">
+                                        Chơi nhiều nhất
+                                        <i class="body-heading-icon fa-solid fa-chevron-right"></i>
+                                    </a>
+                                    <a href="./html/Chitietsp/rockeetleague.html" style="text-decoration: none;">
+                                        <div class="row">                                    
+                                            <div class="game-split-row3">
+                                                <div class="game-split-row3-item__img">
+                                                    <img class="game-split-row3__img" src="./assets/img/RocketLe/ROCKETWIDE.png" alt="">
+                                                </div>
+                                                <div class="game-row3-content">
+                                                    <h4 class="game-split-row3-item__name">Rocket League</h4>
+                                                    <div class="game-split-row3-item__price">
+                                                        <span class="game-split-row3-item__free">Free</span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./html/Chitietsp/valorant.html" style="text-decoration: none;">
+                                        <div class="row">                                    
+                                            <div class="game-split-row3">
+                                                <div class="game-split-row3-item__img">
+                                                    <img class="game-split-row3__img" src="./assets/img/Valo/valorant.jpg" alt="">
+                                                </div>
+                                                <div class="game-row3-content">
+                                                    <h4 class="game-split-row3-item__name">Valorant</h4>
+                                                    <div class="game-split-row3-item__price">
+                                                        <span class="game-split-row3-item__free">Free</span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./html/Chitietsp/GenshinImpact.html" style="text-decoration: none;">
+                                        <div class="row">                                    
+                                            <div class="game-split-row3">
+                                                <div class="game-split-row3-item__img">
+                                                    <img class="game-split-row3__img" src="./assets/img/GI/genshinimpactpc.jpg" alt="">
+                                                </div>
+                                                <div class="game-row3-content">
+                                                    <h4 class="game-split-row3-item__name">Genshin Impact</h4>
+                                                    <div class="game-split-row3-item__price">
+                                                        <span class="game-split-row3-item__free">Free</span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./html/Chitietsp/lol.html" style="text-decoration: none;">
+                                        <div class="row">                                    
+                                            <div class="game-split-row3">
+                                                <div class="game-split-row3-item__img">
+                                                    <img class="game-split-row3__img" src="./assets/img/lol/lol.png" alt="">
+                                                </div>
+                                                <div class="game-row3-content">
+                                                    <h4 class="game-split-row3-item__name">League of legends</h4>
+                                                    <div class="game-split-row3-item__price">
+                                                        <span class="game-split-row3-item__free">Free</span> 
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-4 m-12 c-12">
+                                    <a href="./html/Theloai/upcoming.html" class="body-heading-link">
+                                        Sắp ra mắt
+                                        <i class="body-heading-icon fa-solid fa-chevron-right"></i>
+                                    </a>
+                                    <a href="./html/Chitietsp/marvelrival.html" style="text-decoration: none;">
+                                        <div class="row">                                    
+                                            <div class="game-split-row3">
+                                                <div class="game-split-row3-item__img">
+                                                    <img class="game-split-row3__img" src="./assets/img/marvelrivals/Marvel-Rivals-Game-Modes-Explained.png" alt="">
+                                                </div>
+                                                <div class="game-row3-content">
+                                                    <h4 class="game-split-row3-item__name">Marvel Rivals</h4>
+                                                    <div class="game-split-row3-item__price">
+                                                        <span class="game-split-row3-item__free">Coming soon</span> 
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./html/Chitietsp/frostpunk.html" style="text-decoration: none;">
+                                        <div class="row">                                    
+                                            <div class="game-split-row3">
+                                                <div class="game-split-row3-item__img">
+                                                    <img class="game-split-row3__img" src="./assets/img/FrostPunk/e960-frostpunk_2.png" alt="">
+                                                </div>
+                                                <div class="game-row3-content">
+                                                    <h4 class="game-split-row3-item__name">Frostpunk 2</h4>
+                                                    <div class="game-split-row3-item__price">
+                                                        <span class="game-split-row3-item__dateavai">Available 09/21/24</span> 
+                                                    </div>
+                                                    <div class="game-split-row3-item__price">
+                                                        <span class="game-split-row3-item__free">790.000đ</span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./html/Chitietsp/thewolfamongus.html" style="text-decoration: none;">
+                                        <div class="row">                                    
+                                            <div class="game-split-row3">
+                                                <div class="game-split-row3-item__img">
+                                                    <img class="game-split-row3__img" src="./assets/img/twau2/The_Wolf_Among_Us_2_Teaser.jpg" alt="">
+                                                </div>
+                                                <div class="game-row3-content">
+                                                    <h4 class="game-split-row3-item__name">The Wolf Among Us 2</h4>
+                                                    <div class="game-split-row3-item__price">
+                                                        <span class="game-split-row3-item__free">Coming soon</span> 
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./html/Chitietsp/nyanheroes.html" style="text-decoration: none;">
+                                        <div class="row">                                    
+                                            <div class="game-split-row3">
+                                                <div class="game-split-row3-item__img">
+                                                    <img class="game-split-row3__img" src="./assets/img/NyanHeroes/Nyanheroes.jpg" alt="">
+                                                </div>
+                                                <div class="game-row3-content">
+                                                    <h4 class="game-split-row3-item__name">Nyan Heroes</h4>
+                                                    <div class="game-split-row3-item__price">
+                                                        <span class="game-split-row3-item__free">Coming soon</span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Discover something New -->
+                        <a href="./html/Theloai/discover.html" class="body-heading-link">
+                            KHÁM PHÁ
+                            <i class="body-heading-icon fa-solid fa-chevron-right"></i>
+                        </a>
+                        <div class="game-product mt-24">
+                            <div class="row">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="./html/Chitietsp/rawmen.html" style="text-decoration: none;">
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/RAWMEN/rawmen-1d3pw.png);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">RAWMEN: Food Fighter Arena</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__free">Free</span>                      
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="./html/Chitietsp/deathbound.html" style="text-decoration: none;">
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/Deathbound/deathbound.png);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">Deathbound</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__free">538.000đ</span>                      
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="./html/Chitietsp/Catsonduty.html" style="text-decoration: none;">
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/Catsonduty/catsonduty.png);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">Cats on Duty</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__free">198.000đ</span>                      
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a href="./html/Chitietsp/apexlegend.html" style="text-decoration: none;">
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/ApexLegend/apex.jpg);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">Apex Legends</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__free">Free</span>                      
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-0">
+                                    <a href="./html/Chitietsp/dungeonsofHinter.html" style="text-decoration: none;">
+                                        <!-- Game Product Item-->
+                                        <div class="game-product-item">
+                                            <div class="game-product-item__img" style="background-image: url(./assets/img/DoH/DoH.jpg);"></div>
+                                            <span class="game-product-item__decrip">Base game</span>
+                                            <h4 class="game-product-item__name">Dungeons of Hinterberg</h4>
+                                            <div class="game-product-item__price">
+                                                <span class="game-product-item__free">626.000đ</span>                      
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row footer__content">
+                    <div class="col l-4 m-6 c-12">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách bảo mật</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Thời hạn dịch vụ</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách hoàn tiền</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item-icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item-icon fa-brands fa-twitter"></i>
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item-icon fa-brands fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer-text">
+                        © 2024 Meracisa Corporation. Bảo lưu mọi quyền. Tất cả các thương hiệu là tài sản của chủ sở hữu tương ứng tại Việt Nam và các quốc gia khác.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Modal form đăng nhập -->
+    <div class="modal js-modal-login">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Login form-->
+            <div class="auth-form">
+                <div class="auth-form__container js-modal-container">
+                    <form>
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading auth-form__heading-login">Đăng nhập</h3>
+                            <button class="auth-form__switch-btn btn-header-register auth-form__heading-login-regis js-switch-register">Đăng ký</button>
+                        </div>
+
+                        <div class="auth-form__form">
+                            
+                            <div class="auth-form__group">
+                                <input type="email" placeholder="Nhập email của bạn" required class="auth-form__input">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" required placeholder="Nhập mật khẩu">
+                            </div>
+    
+                        </div>
+
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp</a>
+                            </div>
+
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn-hove auth-form__controls-back btn-normal js-modal-close">TRỞ LẠI</button>
+                            <input class="btn btn--primary btn-hove auth-form__controls-login" type="submit" value="ĐĂNG NHẬP"></input>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="auth-form__socials js-modal-auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal form đăng ký -->
+    <div class="modal js-modal-register">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Register form-->
+            <div class="auth-form">
+                <div class="auth-form__container js-modal-container">
+                    <form>
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <button class="auth-form__switch-btn btn-header-login js-switch-login">Đăng nhập</button>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập họ và tên" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="date" class="auth-form__input" placeholder="Nhập ngày sinh" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập địa chỉ" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="tel" class="auth-form__input" placeholder="Nhập số điện thoại" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Nhập email" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu" required>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với Meracisa về
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn-hove auth-form__controls-back btn-normal js-modal-close">TRỞ LẠI</button>
+                            <input class="btn btn-hove btn--primary" type="submit" value="ĐĂNG KÝ"></input>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="auth-form__socials js-modal-auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>

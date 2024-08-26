@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/grid.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/fonts/fontawesome-free-6.6.0-web/css/all.css">
+    <title>Concord</title>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="grid wide">    
+                <div class="header-top hide-on-mobile">
+                        <!-- Logo -->
+                        <div class="header__logo">
+                            <a href="../../Trang-Chu.html" class="header__logo-link">Meracisa</a>
+                        </div>
+    
+                        <!-- Thông báo + Trợ giúp + Tài khoản -->
+                        <ul class="header-top__navbar-list">
+                            <!-- Thông báo -->
+                            <li class="header-top__navbar-item">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fa-regular fa-bell"></i>
+                                    Thông báo
+                                </a>
+                            </li>
+                            <!-- Đăng ký -->
+                            <li class="header-top__navbar-item ">
+                                <button class="btn-header-register header__navbar-item-link header__navbar-item--strong header__navbar-item--separate js-register-user">
+                                    Đăng ký
+                                </button>
+                            </li>
+                            <li class="header-top__navbar-item">
+                                <button class="btn-header-login header__navbar-item-link header__navbar-item--strong js-login-user">
+                                    Đăng nhập
+                                </button>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="header-bottom">
+                    <div class="nav__pc">
+                        <ul class="header-bottom__nav hide-on-mobile-tablet">
+                            <li><a href="../../Trang-Chu.html" style="text-decoration: none;">Trang chủ</a></li>
+                            <li>
+                                <a href="#">Cửa hàng của bạn</a>
+                                <ul class="header-bottom__subnav">
+                                    <li><a href="../Theloai/recommend.html">Khuyến nghị cộng đồng</a></li>
+                                    <li><a href="#">Đã xem gần đây</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Mới & Đáng chú ý</a>
+                                <ul class="header-bottom__subnav">
+                                    <li><a href="../Theloai/topseller.html">Bán chạy nhất</a></li>
+                                    <li><a href="../Theloai/mostplayed.html">Chơi nhiều nhất</a></li>
+                                    <li><a href="../Theloai/topnewrelease.html">Phát hành mới</a></li>
+                                    <li><a href="../Theloai/upcoming.html">Phát hành sắp ra mắt</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Danh mục</a>
+                                <div class="header-bottom__subnav header-bottom__subnav-split">
+                                    <div class="header-bottom-double">
+                                        <ul class="header-bottom__subnav-part">
+                                            <li><a href="../Theloai/action.html">Hành động</a></li>
+                                            <li><a href="../Theloai/openworld.html">Thế giới mở</a></li>
+                                            <li><a href="../Theloai/adventure.html">Phiêu lưu</a></li>
+                                            <li><a href="../Theloai/strategy.html">Chiến thuật</a></li>
+                                            <li><a href="../Theloai/indie.html">Indie</a></li>
+                                        </ul>
+                                        <ul class="header-bottom__subnav-part">
+                                            <li><a href="../Theloai/sprot.html">Thể thao</a></li>
+                                            <li><a href="../Theloai/racing.html">Đua tốc độ</a></li>
+                                            <li><a href="../Theloai/simple.html">Đơn giản</a></li>
+                                            <li><a href="../Theloai/rpg.html">RPG</a></li>
+                                            <li><a href="../Theloai/team.html">Tổ đội</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Labs</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Bar mobile + tablet -->
+                    <label for="nav-mobile-input" class="nav__bars-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <input type="checkbox" hidden id="nav-mobile-input" class="nav__input">
+
+                    <div class="nav__mobile">
+                        <ul class="nav__mobile-list">
+                            <li><a class="nav__mobile-link" href="../../Trang-Chu.html">Trang chủ</a></li>
+                            <li>
+                                <a class="nav__mobile-link" href="#">
+                                    <label for="nav-mobile-subnav-input" class="nav__chevron-btn">
+                                        Cửa hàng của bạn
+                                        <i class="subnav-mobile-icon fa-solid fa-chevron-down"></i>
+                                    </label>
+                                </a>
+                                
+                                <input type="checkbox" hidden id="nav-mobile-subnav-input" class="nav__subnav-input">
+                                <ul class="nav-mobile__subnav">
+                                    <li><a href="../Theloai/recommend.html">Khuyến nghị cộng đồng</a></li>
+                                    <li><a href="#">Đã xem gần đây</a></li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a class="nav__mobile-link" href="#">
+                                    <label for="nav__mobile-subnav-new" class="nav__chevron-btn">
+                                        Mới & Đáng chú ý
+                                        <i class="subnav-mobile-icon-pt2 fa-solid fa-chevron-down"></i>
+                                    </label>
+                                </a>
+                                <input type="checkbox" hidden id="nav__mobile-subnav-new" class="nav__subnav-input">
+                                <ul class="nav-mobile__subnav">
+                                    <li><a href="../Theloai/topseller.html">Bán chạy nhất</a></li>
+                                    <li><a href="../Theloai/mostplayed.html">Chơi nhiều nhất</a></li>
+                                    <li><a href="../Theloai/topnewrelease.html">Phát hành mới</a></li>
+                                    <li><a href="../Theloai/upcoming.html">Phát hành sắp ra mắt</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="nav__mobile-link" href="#">Tin tức</a></li>
+                            <li><a class="nav__mobile-link" href="#">Labs</a></li>
+                            <li>
+                                <a class="nav__mobile-link hide-on-tablet" href="#">
+                                    <button class="btn-header-register header__navbar-item-link header__navbar-item--strong header__navbar-item--separate js-register-user">
+                                        Đăng ký
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav__mobile-link hide-on-tablet" href="#">
+                                    <button class="btn-header-login header__navbar-item-link header__navbar-item--strong js-login-user">
+                                        Đăng nhập
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <label for="nav-mobile-input" class="nav__overlay"></label>
+
+                    <div class="header__logo-mobile">
+                        <a href="#" class="header__logo-link">Meracisa</a>
+                    </div>
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+
+                    <!-- Search -->
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+    
+                            <!-- Lịch sử tìm kiếm -->
+                            <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="../../Chương11/index.html">God of war</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">League of Legends</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row app__content">
+                    <h3 class="detail-heading" style="padding-right: 200px;">Concord</h3>
+                    <div class="col l-0 m-12 c-12 position-fi ">
+                        <img src="../../assets/img/Concord/concord.png" width="100%" class="detail-iconc" alt="">
+                        <div class="detail-btn-genres">
+                            <span class="detail-btnde">Base game</span>  
+                        </div>
+                        <div class="detail-prices">
+                            <span class="detail-price-new">1.080.000đ</span>
+                        </div>
+                        <div class="detail-btns-list">
+                            <button href="" class="detail-btn-item detail-btn-buy-now js-pay-user">Đặt trước</button>
+                            <a href="" class="detail-btn-item detail-btn-add-to">Thêm vào giỏ</a> 
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Nhà phát triển</span>
+                            <span class="detail-dev-name">Firewalk Studios</span>
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Nhà xuất bản</span>
+                            <span class="detail-dev-name">PlayStation Publishing LLC</span>
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Ngày ra mắt</span>
+                            <span class="detail-dev-name">08/24/24</span>
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Nền tảng</span>
+                            <span class="detail-dev-name">
+                                <i class="fa-brands fa-windows"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col l-9 m-12 c-12">  
+                        <div class="slide-show">
+                            <div class="list-imgs jv-list-imgs">
+                                <img src="../../assets/img/Concord/cc1.png" class="img-item" width="100%" alt="">
+                                <img src="../../assets/img/Concord/cc3.png" class="img-item" width="100%" alt="">
+                                <img src="../../assets/img/Concord/cc4.png" class="img-item" width="100%" alt="">
+                                <img src="../../assets/img/Concord/cc2.png" class="img-item" width="100%" alt="">
+                                <!-- <div class="img-item jv-img" style="background-image: url('../assets/img/NFS/nfs2.jpg');"></div>
+                                <div class="img-item jv-img" style="background-image: url('../assets/img/NFS/nfs3.jpg');"></div>
+                                <div class="img-item jv-img" style="background-image: url('../assets/img/NFS/nfs4.jpg');"></div> -->
+                            </div>
+                            <div class="detail-btns">
+                                <div class="btn-left btn jv-btn-left">
+                                    <i class="btn-width fa-solid fa-chevron-left jv-btn-left"></i>
+                                </div>
+                                <div class="btn-right btn jv-btn-right">
+                                    <i class="btn-width fa-solid fa-chevron-right jv-btn-right"></i>
+                                </div>
+                            </div>
+                            <div class="index-imgs">
+                                <div class="index-item index-item-0 active"></div>
+                                <div class="index-item index-item-1"></div>
+                                <div class="index-item index-item-2"></div>
+                                <div class="index-item index-item-3"></div>
+                            </div>
+                        </div>
+
+                        <!-- Tóm tắt -->
+                        <p class="detail-descrip">
+                            THAM GIA ĐỘI NGŨ CỦA NORTHSTAR. Tập hợp đội quân ngoài vòng pháp luật Freegunner của bạn và hợp tác với bạn bè trực tuyến trên PlayStation®5 và PC¹ tại Concord.
+                        </p>
+
+                        <!-- Thể loại / Tính năng -->
+                        <div class="detail-category">
+                            <div class="row">
+                                <div class="col l-6 m-12 c-12 border-right-solid">
+                                    <h4 class="detail-category-heading">Thể loại</h4>
+                                    <ul class="detail-category-list">
+                                        <li class="detail-category-item">
+                                            <a href="" class="detail-category-item-name">Hành động</a>
+                                        </li>
+                                        <li class="detail-category-item">
+                                            <a href="" class="detail-category-item-name">Phiêu lưu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col l-6 m-12 c-12">
+                                    <h4 class="detail-category-heading">Tính chất</h4>
+                                    </h4>
+                                    <ul class="detail-category-list">
+                                        <li class="detail-category-item">
+                                            <a href="" class="detail-category-item-name">Co-op</a>
+                                        </li>
+                                        <li class="detail-category-item">
+                                            <a href="" class="detail-category-item-name">Nhiều người chơi</a>
+                                        </li>
+                                        <li class="detail-category-item">
+                                            <a href="" class="detail-category-item-name">Người chơi đơn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mô tả trò chơi -->
+                        <div class="detail-content mt-48">
+                            <h3 class="detail-content-heading">THAM GIA ĐỘI NGŨ CỦA NORTHSTAR.</h3>
+                            <p class="detail-content-para">
+                                Tập hợp đội quân ngoài vòng pháp luật Freegunner của bạn và lập nhóm trực tuyến với bạn bè để tham gia chế độ PVP 5v5 ly kỳ trên khắp thiên hà tại Concord.
+                            </p>
+                            <p class="detail-content-para">
+                                Concord là game bắn súng góc nhìn thứ nhất theo nhóm mới dành cho PS5® và PC¹. Tự tay lựa chọn đội hình Freegunners cá nhân của bạn từ đội Northstar – một nhóm những kẻ ngoài vòng pháp luật và nhà thám hiểm làm việc như những tay súng cho thuê.
+                            </p>
+                            <h3 class="detail-content-heading">TẬP HỢP ĐỘI NGŨ CỦA BẠN</h3>
+                            <p class="detail-content-para">
+                                Từ những nhà huyền môn mạnh mẽ và những chú rô-bốt cao lớn cho đến những tay súng thiện xạ và những người chữa bệnh hữu ích, mỗi Freegunner của đội Northstar đều mang trong mình những kỹ năng, tính cách và khả năng độc đáo phù hợp với nhiều phong cách chơi khác nhau.
+                            </p>
+                            <p class="detail-content-para">
+                                Tạo đội Freegunners tùy chỉnh của riêng bạn để mang theo một kho vũ khí gồm nhiều loại vai trò khác nhau vào trận đấu hoặc tập trung vào các nhân vật yêu thích của bạn để làm chủ lối chơi của họ và mở khóa các công cụ sửa đổi, mỹ phẩm, truyền thuyết nền độc đáo, v.v. – bạn quyết định thời điểm chơi các nhân vật của mình và cách bạn tác động đến trận đấu.
+                            </p>
+                            <h3 class="detail-content-heading">PHIÊU LƯU TRONG MỖI TRẬN ĐẤU</h3>
+                            <p class="detail-content-para js-excerpt excerpt-hidden">
+                                Mỗi trận đấu là một cuộc phiêu lưu mới khi bạn hợp tác với bạn bè trực tuyến và đối đầu với các phi hành đoàn Freegunner đối thủ để hoàn thành các nhiệm vụ có mức cược cao trên khắp thiên hà Concord trong chế độ PVP trực tuyến.
+                                <span class="detail-content-span-para">
+                                    Khi chơi, hãy hoàn thành các thử thách hàng ngày và hàng tuần từ Bảng việc làm để kiếm tiến trình, mở khóa các vật phẩm mới cho Freegunners của bạn và tìm hiểu thêm về các nhân vật, thế giới và phe phái trong Thiên hà Concord với Hướng dẫn thiên hà. Thắng hay thua, mỗi trận đấu đều mang đến sự tiến trình bổ ích.
+                                </span>
+                                <span class="detail-content-span-heading">CHẾ ĐỘ CHO MỌI TÂM TRẠNG</span>
+                                <span class="detail-content-span-para">
+                                    Với một loạt các chế độ dựa trên mục tiêu và hồi sinh tập trung vào lối chơi đồng đội, Concord có sáu chế độ PVP khác nhau cho phép bạn xác định mức độ thử thách mà bạn đang tìm kiếm - có thể là thư giãn với một vài trận đấu hoặc hợp tác với bạn bè để có trải nghiệm cạnh tranh hơn.
+                                </span>
+                                <span class="detail-content-span-heading">CÂU CHUYỆN CỦA PHI HÀNH ĐỘNG NORTHSTAR</span>
+                                <span class="detail-content-span-para">
+                                    Khi hành trình của bạn ở Concord diễn ra, câu chuyện của phi hành đoàn Northstar cũng vậy. Mỗi tuần, bạn sẽ được chào đón bằng những đoạn phim ngắn mới ra mắt trong trò chơi, cung cấp những câu chuyện đang diễn ra mở rộng về các nhân vật và cuộc phiêu lưu của họ.
+                                </span>
+                                <span class="detail-content-span-heading">MỘT VŨ TRỤ MỞ RỘNG</span>
+                                <span class="detail-content-span-para">
+                                    Đội quân của Northstar và thiên hà Concord sẽ phát triển thông qua các bản cập nhật thường xuyên sau khi ra mắt, giới thiệu Freegunners, chế độ chơi, bản đồ và thế giới mới, cũng như các đoạn phim ngắn hàng tuần mà không mất thêm chi phí.
+                                </span>
+                            </p>
+                            
+                            <a role="button" href="#" class="show-more">
+                                <span class="detail-content-name js-content-name">Show more</span>
+                            </a>
+                        </div>
+
+                        <!-- Đánh giá -->
+                    
+                        <!-- Review -->
+                        
+
+                        <!-- Cấu hình -->
+                         <div class="detail-configuration">
+                            <h3 class="detail-content-heading">Yêu cầu Concord</h3>
+                            <div class="configuration-content">
+                                <!-- Tab -->
+                                <div class="configuration-tab">
+                                    <div class="tab-item">
+                                        <span class="tab-item-name">Windows</span> 
+                                    </div>
+                                </div>
+
+                                <!-- Content -->
+                                 <div class="configuration-tab-content">
+                                    <div class="tab-pane-m">
+                                        <div class="tab-pane-minimum">
+                                            <h3 class="detail-content-heading">Tối thiểu</h3>
+                                            <span class="tab-pane-extra">Phiên bản OS</span>
+                                            <span class="tab-pane-main">Windows 10 64Bit (Creators Update)</span>
+
+                                            <span class="tab-pane-extra">CPU</span>
+                                            <span class="tab-pane-main tab-pane-main-cpu">Intel Core i7-7700K or AMD Ryzen 7 2700X</span>
+
+                                            <span class="tab-pane-extra">Memory</span>
+                                            <span class="tab-pane-main">8 GB DDR4</span>
+                                            
+                                            <span class="tab-pane-extra">Windows Graphics</span>
+                                            <span class="tab-pane-main tab-pane-main-gpu">NVIDIA GeForce GTX 1060 6GB or AMD Radeon RX 580 8GB</span>
+
+                                            <span class="tab-pane-extra">DirectX</span>
+                                            <span class="tab-pane-main">DirectX 12</span>
+
+                                            <span class="tab-pane-extra">Dung lượng</span>
+                                            <span class="tab-pane-main">35 GB SSD</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane-r">
+                                        <div class="tab-pane-recommended">
+                                            <h3 class="detail-content-heading">Khuyến nghị</h3>
+                                            <span class="tab-pane-extra">Phiên bản OS</span>
+                                            <span class="tab-pane-main">Windows 10 64Bit (Creators Update)</span>
+
+                                            <span class="tab-pane-extra">CPU</span>
+                                            <span class="tab-pane-main tab-pane-main-cpu">Intel Core i7-8700K or AMD Ryzen 5 3600X</span>
+
+                                            <span class="tab-pane-extra">Memory</span>
+                                            <span class="tab-pane-main">16 GB DDR4</span>
+                                            
+                                            <span class="tab-pane-extra">Windows Graphics</span>
+                                            <span class="tab-pane-main tab-pane-main-gpu">NVIDIA GeForce RTX 2060 Super or AMD Radeon RX 5600 XT</span>
+
+                                            <span class="tab-pane-extra">DirectX</span>
+                                            <span class="tab-pane-main">DirectX 12</span>
+
+                                            <span class="tab-pane-extra">Dung lượng</span>
+                                            <span class="tab-pane-main">35 GB SSD</span>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12 position-fi hide-on-mobile-tablet">
+                        <img src="../../assets/img/Concord/egs-concord-firewalkstudios-ic1-400x400-f6d9d2dc2b9.avif" width="100%" class="detail-iconc" alt="">
+                        <div class="detail-btn-genres">
+                            <span class="detail-btnde">Base game</span>  
+                        </div>
+                        <div class="detail-prices">
+                            <span class="detail-price-new">1.080.000đ</span>
+                        </div>
+                        <div class="detail-btns-list">
+                            <button href="" class="detail-btn-item detail-btn-buy-now js-pay-user">Đặt trước</button>
+                            <a href="" class="detail-btn-item detail-btn-add-to">Thêm vào giỏ</a> 
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Nhà phát triển</span>
+                            <span class="detail-dev-name">Firewalk Studios</span>
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Nhà xuất bản</span>
+                            <span class="detail-dev-name">PlayStation Publishing LLC</span>
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Ngày ra mắt</span>
+                            <span class="detail-dev-name">08/24/24</span>
+                        </div>
+                        <div class="detail-com detail-dev">
+                            <span class="detail-dev-item">Nền tảng</span>
+                            <span class="detail-dev-name">
+                                <i class="fa-brands fa-windows"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row footer__content">
+                    <div class="col l-4 m-6 c-12">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách bảo mật</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Thời hạn dịch vụ</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách hoàn tiền</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item-icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item-icon fa-brands fa-twitter"></i>
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item-icon fa-brands fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer-text">
+                        © 2024 Meracisa Corporation. Bảo lưu mọi quyền. Tất cả các thương hiệu là tài sản của chủ sở hữu tương ứng tại Việt Nam và các quốc gia khác.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal form đăng nhập -->
+    <div class="modal js-modal-login">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Login form-->
+            <div class="auth-form">
+                <div class="auth-form__container js-modal-container">
+                    <form>
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading auth-form__heading-login">Đăng nhập</h3>
+                            <button class="auth-form__switch-btn btn-header-register auth-form__heading-login-regis js-switch-register">Đăng ký</button>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" placeholder="Nhập email của bạn" required class="auth-form__input-buy-now">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input-buy-now" required placeholder="Nhập mật khẩu">
+                            </div> 
+                        </div>
+
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp</a>
+                            </div>
+
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn-hove auth-form__controls-back btn-normal js-modal-close">TRỞ LẠI</button>
+                            <input class="btn btn--primary btn-hove auth-form__controls-login" type="submit" value="ĐĂNG NHẬP"></input>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="auth-form__socials js-modal-auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal form đăng ký -->
+    <div class="modal js-modal-register">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <!-- Register form-->
+            <div class="auth-form">
+                <div class="auth-form__container js-modal-container">
+                    <form>
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <button class="auth-form__switch-btn btn-header-login js-switch-login">Đăng nhập</button>
+                        </div>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input-buy-now" placeholder="Nhập họ và tên" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="date" class="auth-form__input" placeholder="Nhập ngày sinh" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập địa chỉ" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="tel" class="auth-form__input" placeholder="Nhập số điện thoại" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Nhập email" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu" required>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu" required>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với Meracisa về
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn btn-hove auth-form__controls-back btn-normal js-modal-close">TRỞ LẠI</button>
+                            <input class="btn btn-hove btn--primary" type="submit" value="ĐĂNG KÝ"></input>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="auth-form__socials js-modal-auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--width-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal buy now -->
+    <div class="modal js-modal-pay">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form_buynow">  
+                <h3 class="auth-form__top-buynow">Thanh toán</h3>
+                <div class="auth-form_buynow--display">
+                    <div class="auth-form_buynow__container js-modal-pay-container">
+                        <div class="auth-form-buynow__header">
+                            <h3 class="auth-form__heading-buynow">Thẻ ATM / Tài khoản ngân hàng</h3>
+                        </div>
+    
+                        <div class="auth-form__form">
+                            <div class="auth-form-card-number-icon">
+                                <span class="auth-form__numbercard">Số thẻ*</span>
+                                <div class="auth-form-icons">
+                                    <span class="auth-form__icon-bank">
+                                        <i class="fa-brands fa-cc-mastercard"></i>
+                                    </span>
+                                    <span class="auth-form__icon-bank">
+                                        <i class="fa-brands fa-cc-visa"></i>
+                                    </span>
+                                    <span class="auth-form__icon-bank">
+                                        <i class="fa-brands fa-cc-paypal"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <form>
+                            <div class="auth-form__group">
+                                <input type="tel" placeholder="9704 1234 5678 9123" required class="auth-form__input-buy-now" maxlength="19">
+                            </div>
+    
+                            <div class="auth-form__dayname row">
+                                <div class="col l-6 m-6 c-12">
+                                    <span class="auth-form__datecard">Tháng/ Năm phát hành*</span>
+                                    <input type="text" class="auth-form__input-buy-now " required placeholder="12/20" max-length="4">
+                                </div>
+
+                                <div class="col l-6 m-6 c-12">
+                                    <span class="auth-form__datecard">Tên chủ thẻ*</span>
+                                    <input type="text" class="auth-form__input-buy-now" required placeholder="NGUYEN VAN A">
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__detail-game js-modal-detail-game">
+                        <div class="auth-form-buynow__header">
+                            <h3 class="auth-form__heading-buynow auth-form__heading-buynnow">Thông tin đơn hàng</h3>
+                        </div>
+                        
+                        <div class="auth-form__detail">
+                            <img class="auth-form__detail-img" src="../../assets/img/Concord/concord.png" alt="">
+                            <div class="auth-form-detail-dev">
+                                <span class="auth-form__gamename">Concord</span>
+                                <span class="auth-form__developer">Firewalk Studios</span>
+                            </div>
+                        </div>
+    
+                        <div class="auth-form__prices">
+                            <div class="auth-form__price">
+                                <span class="price-old-name">Giá</span>
+                                <span class="price-old-money">1.080.000</span>
+                            </div>
+                            <div class="auth-form__price">
+                                <span class="price-old-name">Giảm giá</span>
+                                <span class="price-old-money">0</span>
+                            </div>
+                        </div>
+    
+                        <div class="auth-form__prices-total">
+                            <div class="auth-form__price auth-form__price--big">
+                                <span class="price-total-name">Tổng cộng</span>
+                                <span class="price-total-money">1.080.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="auth-form__controls auth-form__controls-margin">
+                    <button class="btn btn-hove auth-form__controls-back btn-normal js-modal-pay-close">Hủy giao dịch</button>
+                    <input class="btn btn--primary btn-hove auth-form__controls-login" type="submit" value="Thanh toán"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../main.js"></script>
+</body>
+</html>
